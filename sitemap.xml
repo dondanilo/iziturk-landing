@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://iziturkish.com/</loc>
+    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://iziturkish.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://iziturkish.com/"/>
+  </url>
+
+  <url>
+    <loc>https://iziturkish.com/blog/</loc>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-17</lastmod>
+  </url>
+
+  <!-- Blog articles — будут добавлены после создания блога -->
+  <!--
+  <url><loc>https://iziturkish.com/blog/turetskiy-alfavit.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  -->
+
+  <url>
+    <loc>https://iziturkish.com/privacy.html</loc>
+    <priority>0.3</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://iziturkish.com/terms.html</loc>
+    <priority>0.3</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://iziturkish.com/refund.html</loc>
+    <priority>0.3</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+
+</urlset>
