@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <!-- GA4 — первым в head. TODO: заменить G-XXXXXXXXXX на реальный ID -->
+  <!-- GA4 — TODO: заменить G-XXXXXXXXXX -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
 
-  <!-- Yandex Metrika. TODO: заменить XXXXXXX на реальный ID -->
+  <!-- Yandex Metrika — TODO: заменить XXXXXXX -->
   <script type="text/javascript">(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return}}k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window,document,'script','https://mc.yandex.ru/metrika/tag.js','ym');ym(XXXXXXX,'init',{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});</script>
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="IziTurkish — учи турецкий язык за 10 минут в день по реальным сценариям из жизни в Турции. ВНЖ, базар, врач, банк — говори уверенно уже через месяц.">
-  <title>IziTurkish — турецкий язык для русских в Турции</title>
+  <title>IziTurkish — Учи турецкий легко | Для русскоязычных в Турции</title>
 
   <link rel="canonical" href="https://iziturkish.com/">
   <link rel="sitemap" type="application/xml" href="/sitemap.xml">
@@ -21,467 +21,385 @@
 
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://iziturkish.com/">
-  <meta property="og:title" content="IziTurkish — турецкий язык для русских в Турции">
-  <meta property="og:description" content="Учи турецкий за 10 минут в день по реальным сценариям. ВНЖ, базар, врач, банк — говори уверенно.">
+  <meta property="og:title" content="IziTurkish — Учи турецкий легко">
+  <meta property="og:description" content="Реальные диалоги, сценарии из жизни в Турции и умное повторение. Первая неделя бесплатно.">
   <meta property="og:image" content="https://iziturkish.com/og-image.png">
   <meta property="og:locale" content="ru_RU">
   <meta property="og:locale:alternate" content="en_US">
   <meta property="og:site_name" content="IziTurkish">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="IziTurkish — турецкий для русских в Турции">
-  <meta name="twitter:description" content="Учи турецкий за 10 минут в день по реальным сценариям.">
+  <meta name="twitter:title" content="IziTurkish — Учи турецкий легко">
+  <meta name="twitter:description" content="Реальные диалоги, сценарии из жизни в Турции и умное повторение. 7 дней бесплатно.">
   <meta name="twitter:image" content="https://iziturkish.com/og-image.png">
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/favicon.svg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap"></noscript>
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://iziturkish.com/#organization",
-        "name": "IziTurkish",
-        "url": "https://iziturkish.com",
-        "logo": "https://iziturkish.com/og-image.png",
-        "contactPoint": { "@type": "ContactPoint", "email": "hello@iziturkish.com", "contactType": "customer support" }
-      },
-      {
-        "@type": "WebSite",
-        "@id": "https://iziturkish.com/#website",
-        "url": "https://iziturkish.com",
-        "name": "IziTurkish",
-        "publisher": { "@id": "https://iziturkish.com/#organization" }
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          { "@type": "Question", "name": "Нужно ли знать турецкий алфавит, чтобы начать?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Нет. Каждое слово сопровождается транскрипцией русскими буквами. Алфавит можно выучить параллельно." }},
-          { "@type": "Question", "name": "Сколько времени нужно в день?",
-            "acceptedAnswer": { "@type": "Answer", "text": "10 минут. Один урок занимает 5–10 минут. Стрик-система помогает не пропускать дни." }},
-          { "@type": "Question", "name": "Чем IziTurkish отличается от Duolingo?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Duolingo учит языку в общем. IziTurkish создан специально для русских в Турции — все сценарии из реальной жизни: базар, ВНЖ, нотариус, врач." }},
-          { "@type": "Question", "name": "Как работает бесплатный период?",
-            "acceptedAnswer": { "@type": "Answer", "text": "7 дней полного доступа — без кредитной карты. После окончания пробного периода выбираешь тариф." }},
-          { "@type": "Question", "name": "Можно ли отменить подписку?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Да, в любой момент через личный кабинет LemonSqueezy. Никаких штрафов и сложностей." }},
-          { "@type": "Question", "name": "На каких устройствах работает?",
-            "acceptedAnswer": { "@type": "Answer", "text": "PWA — работает на iPhone, Android, планшете и компьютере. Офлайн тоже работает." }}
-        ]
-      },
-      {
-        "@type": "SoftwareApplication",
-        "name": "IziTurkish",
-        "applicationCategory": "EducationApplication",
-        "operatingSystem": "Web, iOS, Android",
-        "description": "Турецкий язык для русских в Турции — реальные сценарии, SRS-повторение, офлайн PWA",
-        "url": "https://cabinet.iziturkish.com",
-        "offers": [
-          { "@type": "Offer", "name": "Помесячная подписка", "price": "8.99", "priceCurrency": "EUR", "priceValidUntil": "2027-12-31", "availability": "https://schema.org/InStock" },
-          { "@type": "Offer", "name": "Годовая подписка", "price": "59.88", "priceCurrency": "EUR", "priceValidUntil": "2027-12-31", "availability": "https://schema.org/InStock" }
-        ],
-        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5", "reviewCount": "3" }
-      }
+      { "@type": "Organization", "@id": "https://iziturkish.com/#organization", "name": "IziTurkish", "url": "https://iziturkish.com", "logo": "https://iziturkish.com/og-image.png", "contactPoint": { "@type": "ContactPoint", "email": "hello@iziturkish.com", "contactType": "customer support" } },
+      { "@type": "WebSite", "@id": "https://iziturkish.com/#website", "url": "https://iziturkish.com", "name": "IziTurkish", "publisher": { "@id": "https://iziturkish.com/#organization" } },
+      { "@type": "FAQPage", "mainEntity": [
+        { "@type": "Question", "name": "Нужно ли знать турецкий алфавит, чтобы начать?", "acceptedAnswer": { "@type": "Answer", "text": "Нет. Каждое слово сопровождается транскрипцией русскими буквами." } },
+        { "@type": "Question", "name": "Сколько времени нужно в день?", "acceptedAnswer": { "@type": "Answer", "text": "10 минут. Один урок занимает 5–10 минут." } },
+        { "@type": "Question", "name": "Чем IziTurkish отличается от Duolingo?", "acceptedAnswer": { "@type": "Answer", "text": "IziTurkish создан специально для русских в Турции — базар, ВНЖ, нотариус, врач, аренда." } },
+        { "@type": "Question", "name": "Как работает бесплатный период?", "acceptedAnswer": { "@type": "Answer", "text": "7 дней полного доступа — без кредитной карты." } },
+        { "@type": "Question", "name": "Можно ли отменить подписку?", "acceptedAnswer": { "@type": "Answer", "text": "Да, в любой момент через личный кабинет LemonSqueezy." } },
+        { "@type": "Question", "name": "На каких устройствах работает?", "acceptedAnswer": { "@type": "Answer", "text": "PWA — iPhone, Android, планшет, компьютер. Офлайн тоже работает." } }
+      ]},
+      { "@type": "SoftwareApplication", "name": "IziTurkish", "applicationCategory": "EducationApplication", "operatingSystem": "Web, iOS, Android", "url": "https://cabinet.iziturkish.com", "offers": [
+        { "@type": "Offer", "name": "Помесячная подписка", "price": "8.99", "priceCurrency": "EUR", "priceValidUntil": "2027-12-31", "availability": "https://schema.org/InStock" },
+        { "@type": "Offer", "name": "Годовая подписка", "price": "59.88", "priceCurrency": "EUR", "priceValidUntil": "2027-12-31", "availability": "https://schema.org/InStock" }
+      ], "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5", "reviewCount": "3" } }
     ]
   }
   </script>
 </head>
 <body>
 
-<!-- ===== NAV ===== -->
-<nav class="nav">
-  <div class="container">
-    <div class="nav-inner">
-      <a href="/" class="nav-logo">🇹🇷 Izi<span>Turkish</span></a>
-      <div class="nav-links">
-        <a href="/blog/" data-i18n="nav-blog">Блог</a>
-        <a href="https://cabinet.iziturkish.com" data-i18n="nav-login">Войти в кабинет</a>
+<!-- ==================== NAV ==================== -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="#">
+      <span class="logo-icon">🇹🇷</span>
+      <span class="logo-text">IziTurkish</span>
+    </a>
+    <div class="nav-right">
+      <div class="lang-toggle">
+        <button class="lang-btn active" id="btn-ru" onclick="switchLang('ru')">RU</button>
+        <button class="lang-btn" id="btn-en" onclick="switchLang('en')">EN</button>
       </div>
-      <div class="nav-right">
-        <div class="lang-switcher">
-          <button id="btn-ru" class="active" onclick="switchLang('ru')">RU</button>
-          <button id="btn-en" onclick="switchLang('en')">EN</button>
-        </div>
-        <!-- TODO: заменить MONTHLY_PRODUCT_ID на реальный ID LemonSqueezy -->
-        <a href="https://iziturkish.lemonsqueezy.com/checkout/buy/MONTHLY_PRODUCT_ID" class="btn btn-primary" data-i18n="nav-cta">Попробовать бесплатно</a>
-      </div>
+      <a href="/blog/" class="nav-login" data-i18n="nav-blog">Блог</a>
+      <a href="https://cabinet.iziturkish.com" class="nav-login" data-i18n="nav-login">Войти в кабинет</a>
+      <!-- TODO: заменить MONTHLY_PRODUCT_ID -->
+      <a href="https://iziturkish.lemonsqueezy.com/checkout/buy/MONTHLY_PRODUCT_ID" class="nav-cta" data-i18n="nav-cta">Попробовать бесплатно</a>
     </div>
   </div>
 </nav>
 
-<!-- ===== HERO ===== -->
+<!-- ==================== HERO ==================== -->
 <section class="hero">
-  <div class="container">
-    <div class="hero-inner">
-      <div class="hero-text">
-        <div class="hero-tag">
-          <span class="badge">🎁 7 дней бесплатно</span>
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span data-i18n="hero-badge">Специально для русскоязычных в Турции</span>
+      </div>
+      <h1 class="hero-title">
+        Турецкий —<br>
+        <span class="hero-title-accent" data-i18n="hero-title-accent">не сложный.</span><br>
+        <span data-i18n="hero-title-end">Просто учи с нами.</span>
+      </h1>
+      <p class="hero-sub" data-i18n="hero-sub">
+        IziTurkish помогает русскоязычным жителям Турции освоить язык легко — через реальные диалоги, сценарии из жизни и умное повторение.
+      </p>
+      <div class="hero-actions">
+        <!-- TODO: заменить MONTHLY_PRODUCT_ID -->
+        <a href="https://iziturkish.lemonsqueezy.com/checkout/buy/MONTHLY_PRODUCT_ID" class="btn-hero-primary" data-i18n="hero-cta">
+          Начать бесплатно — 7 дней
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12M10 4l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <p class="hero-note" data-i18n="hero-note">7 дней бесплатно · Отмена в любой момент</p>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="hero-stat-num">150+</span>
+          <span class="hero-stat-lbl" data-i18n="stat1">слов и фраз</span>
         </div>
-        <h1 class="hero-title" data-i18n="hero-title">Турецкий язык —<br><em>для жизни</em>, а не для экзамена</h1>
-        <p class="hero-subtitle" data-i18n="hero-subtitle">10 минут в день по реальным сценариям из жизни в Турции. Базар, ВНЖ, врач, банк — говори уверенно уже через месяц.</p>
-        <div class="hero-ctas">
-          <a href="https://iziturkish.lemonsqueezy.com/checkout/buy/MONTHLY_PRODUCT_ID" class="btn btn-primary btn-lg" data-i18n="hero-cta1">Попробовать 7 дней бесплатно</a>
-          <a href="#how" class="btn btn-outline" data-i18n="hero-cta2">Как это работает?</a>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="hero-stat-num">10+</span>
+          <span class="hero-stat-lbl" data-i18n="stat2">сценариев</span>
         </div>
-        <div class="hero-trust">
-          <div class="hero-avatars">
-            <span>МК</span><span>АМ</span><span>СР</span><span>ДК</span><span>+</span>
-          </div>
-          <div class="hero-trust-text">
-            <strong data-i18n="hero-trust-count">Уже 1 240 учеников</strong>
-            <span data-i18n="hero-trust-sub">учат турецкий вместе с нами</span>
-          </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="hero-stat-num">10 мин</span>
+          <span class="hero-stat-lbl" data-i18n="stat3">в день</span>
         </div>
       </div>
-      <div class="hero-visual">
-        <div class="phone">
-          <div class="phone-streak">🔥 5 дней</div>
-          <div class="phone-screen">
-            <div class="phone-header">
-              <div class="phone-header-top">
-                <span>Урок 3 · Глаголы</span>
-                <span>❤️❤️❤️</span>
-              </div>
-              <h4>Выбери перевод</h4>
+    </div>
+
+    <div class="hero-visual">
+      <div class="phone-mockup">
+        <div class="phone-screen">
+          <div class="app-preview">
+            <div class="preview-header">
+              <div class="preview-hearts">❤️❤️❤️</div>
+              <div class="preview-progress"><div class="preview-progress-fill"></div></div>
+              <div class="preview-xp">⚡14</div>
             </div>
-            <div class="phone-content">
-              <div class="phone-word-card">
-                <div class="phone-word">gitmek</div>
-                <div class="phone-transcription">гит-МЕК</div>
-                <div class="phone-translation">глагол движения</div>
-              </div>
-              <div class="phone-options">
-                <div class="phone-option correct">✓ идти</div>
-                <div class="phone-option">говорить</div>
-                <div class="phone-option">знать</div>
-                <div class="phone-option">хотеть</div>
-              </div>
-              <div class="phone-xp">
-                <span>🌟 60 XP</span>
-                <div class="phone-xp-bar-wrap"><div class="phone-xp-bar"></div></div>
-                <span>100</span>
-              </div>
+            <div class="preview-label">ПЕРЕВЕДИ ФРАЗУ</div>
+            <div class="preview-question">Nereye gidiyorsunuz?</div>
+            <div class="preview-transcription">не-РЕ-е ги-ди-ЙОР-су-нуз?</div>
+            <div class="preview-options">
+              <div class="preview-option correct">✓ Куда вы идёте?</div>
+              <div class="preview-option">Как вас зовут?</div>
+              <div class="preview-option">Сколько стоит?</div>
             </div>
           </div>
-          <div class="phone-badge">+10 XP ✨</div>
+        </div>
+        <div class="phone-notch"></div>
+      </div>
+      <div class="float-card float-card-1">
+        <span class="float-card-icon">🔥</span>
+        <div>
+          <div class="float-card-title" data-i18n="fc1-title">7 дней подряд</div>
+          <div class="float-card-sub" data-i18n="fc1-sub">Отличный прогресс!</div>
+        </div>
+      </div>
+      <div class="float-card float-card-2">
+        <span class="float-card-icon">⚡</span>
+        <div>
+          <div class="float-card-title" data-i18n="fc2-title">+350 XP</div>
+          <div class="float-card-sub" data-i18n="fc2-sub">за эту неделю</div>
+        </div>
+      </div>
+      <div class="float-card float-card-3">
+        <span class="float-card-icon">🏆</span>
+        <div>
+          <div class="float-card-title" data-i18n="fc3-title">Достижение!</div>
+          <div class="float-card-sub" data-i18n="fc3-sub">Первый разговор</div>
+        </div>
+      </div>
+      <div class="hero-blob"></div>
+    </div>
+  </div>
+  <div class="hero-wave">
+    <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0 40C240 80 480 0 720 40C960 80 1200 0 1440 40V80H0V40Z" fill="#F8F9FA"/>
+    </svg>
+  </div>
+</section>
+
+<!-- ==================== PROOF BAR ==================== -->
+<section class="proof-bar">
+  <div class="proof-bar-inner">
+    <p class="proof-bar-text" data-i18n="proof-text">Нам доверяют русскоязычные жители Турции</p>
+    <div class="proof-flags">
+      <span class="proof-flag">🏖️ Анталья</span>
+      <span class="proof-flag">🌉 Стамбул</span>
+      <span class="proof-flag">🌊 Алания</span>
+      <span class="proof-flag">🏝️ Бодрум</span>
+      <span class="proof-flag">🌅 Мерсин</span>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== PAIN ==================== -->
+<section class="pain">
+  <div class="section-inner">
+    <span class="section-tag" data-i18n="pain-tag">Тебе знакомо?</span>
+    <h2 class="section-title" data-i18n="pain-title">Жизнь в Турции без турецкого — это стресс</h2>
+    <p class="section-sub" data-i18n="pain-sub">Большинство русскоязычных в Турции сталкиваются с одними и теми же проблемами</p>
+    <div class="pain-grid">
+      <div class="pain-card">
+        <div class="pain-emoji">🛒</div>
+        <div class="pain-title" data-i18n="p1-title">На базаре — как в немом кино</div>
+        <p class="pain-text" data-i18n="p1-text">Продавцы говорят только по-турецки. Показываешь пальцем, платишь сколько скажут — часто переплачиваешь.</p>
+      </div>
+      <div class="pain-card">
+        <div class="pain-emoji">📋</div>
+        <div class="pain-title" data-i18n="p2-title">ВНЖ — через переводчика за деньги</div>
+        <p class="pain-text" data-i18n="p2-text">Каждый раз платишь посреднику за простые вопросы. Или стоишь в очереди и не понимаешь, что тебе говорят.</p>
+      </div>
+      <div class="pain-card">
+        <div class="pain-emoji">🏥</div>
+        <div class="pain-title" data-i18n="p3-title">Врач — страшно без переводчика</div>
+        <p class="pain-text" data-i18n="p3-text">Объяснить симптомы сложно даже жестами. Google Translate в кабинете врача — не лучшее решение.</p>
+      </div>
+      <div class="pain-card">
+        <div class="pain-emoji">🏠</div>
+        <div class="pain-title" data-i18n="p4-title">Аренда — подписываешь вслепую</div>
+        <p class="pain-text" data-i18n="p4-text">Договор аренды на турецком — и ты просто ставишь подпись, надеясь на честность арендодателя.</p>
+      </div>
+      <div class="pain-card">
+        <div class="pain-emoji">🏦</div>
+        <div class="pain-title" data-i18n="p5-title">Банк — очереди и непонимание</div>
+        <p class="pain-text" data-i18n="p5-text">Открыть счёт, получить карту, сделать перевод — каждая операция превращается в квест с жестами и гуглом.</p>
+      </div>
+      <div class="pain-card">
+        <div class="pain-emoji">🚌</div>
+        <div class="pain-title" data-i18n="p6-title">Транспорт — едешь куда попало</div>
+        <p class="pain-text" data-i18n="p6-text">Объявления только на турецком. Не можешь спросить водителя, пропускаешь нужную остановку.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== SOLUTION ==================== -->
+<section class="solution">
+  <div class="section-inner">
+    <div class="solution-grid">
+      <div>
+        <span class="section-tag" data-i18n="sol-tag">Решение</span>
+        <h2 class="section-title" data-i18n="sol-title">Турецкий через сценарии из реальной жизни</h2>
+        <ul class="solution-list">
+          <li><span class="solution-icon">🎭</span><span data-i18n="sol1">10+ сценариев из жизни в Турции — базар, ВНЖ, врач, банк, аренда</span></li>
+          <li><span class="solution-icon">🧠</span><span data-i18n="sol2">SRS-алгоритм: умное повторение слов в нужный момент — как Anki, но проще</span></li>
+          <li><span class="solution-icon">🔤</span><span data-i18n="sol3">Транскрипция русскими буквами к каждому слову и фразе</span></li>
+          <li><span class="solution-icon">🎙️</span><span data-i18n="sol4">Тренировка произношения с микрофоном — приложение слушает и оценивает</span></li>
+          <li><span class="solution-icon">📱</span><span data-i18n="sol5">Работает офлайн — учи в метро, на пляже, без интернета</span></li>
+        </ul>
+        <!-- TODO: заменить MONTHLY_PRODUCT_ID -->
+        <a href="https://iziturkish.lemonsqueezy.com/checkout/buy/MONTHLY_PRODUCT_ID" class="btn-solution" data-i18n="sol-cta">
+          Начать бесплатно →
+        </a>
+      </div>
+      <div class="solution-visual">
+        <div class="scenario-list">
+          <div class="scenario-item">
+            <span class="scenario-icon">🛒</span>
+            <div>
+              <div class="scenario-name">На базаре</div>
+              <div class="scenario-desc">Цены, торговля, фрукты и овощи</div>
+            </div>
+          </div>
+          <div class="scenario-item">
+            <span class="scenario-icon">📋</span>
+            <div>
+              <div class="scenario-name">ВНЖ и икамет</div>
+              <div class="scenario-desc">Документы, нотариус, миграционная служба</div>
+            </div>
+          </div>
+          <div class="scenario-item">
+            <span class="scenario-icon">🏥</span>
+            <div>
+              <div class="scenario-name">У врача и в аптеке</div>
+              <div class="scenario-desc">Симптомы, рецепт, страховка</div>
+            </div>
+          </div>
+          <div class="scenario-item">
+            <span class="scenario-icon">🏠</span>
+            <div>
+              <div class="scenario-name">Аренда квартиры</div>
+              <div class="scenario-desc">Договор, депозит, хозяин</div>
+            </div>
+          </div>
+          <div class="scenario-item">
+            <span class="scenario-icon">🏦</span>
+            <div>
+              <div class="scenario-name">В банке</div>
+              <div class="scenario-desc">Счёт, карта, переводы</div>
+            </div>
+          </div>
+          <div class="scenario-item">
+            <span class="scenario-icon">🚌</span>
+            <div>
+              <div class="scenario-name">Транспорт</div>
+              <div class="scenario-desc">Автобус, такси, метро</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===== SOCIAL PROOF ===== -->
-<div class="social-proof">
-  <div class="container">
-    <div class="social-proof-inner">
-      <div class="sp-item">
-        <div class="sp-avatars">
-          <span>МК</span><span>АМ</span><span>СР</span><span>ДК</span><span>НБ</span>
-        </div>
-        <div class="sp-text">
-          <strong data-i18n="sp-count">1 240+ учеников</strong>
-          <span data-i18n="sp-sub">по всей Турции</span>
-        </div>
-      </div>
-      <div class="sp-divider"></div>
-      <div class="sp-item">
-        <div class="sp-stars">★★★★★</div>
-        <div class="sp-text">
-          <strong data-i18n="sp-rating">Рейтинг 5.0</strong>
-          <span data-i18n="sp-reviews">на основе отзывов</span>
-        </div>
-      </div>
-      <div class="sp-divider"></div>
-      <div class="sp-item">
-        <div class="sp-text">
-          <strong data-i18n="sp-cities">Анталья · Стамбул · Алания</strong>
-          <span data-i18n="sp-cities-sub">и другие города Турции</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ===== FEATURES ===== -->
+<!-- ==================== FEATURES ==================== -->
 <section class="features">
-  <div class="container">
-    <div class="section-header">
-      <span class="badge">Почему IziTurkish</span>
-      <h2 data-i18n="feat-title" style="margin-top:12px">Учи турецкий, который<br>реально работает в Турции</h2>
-      <p data-i18n="feat-sub">Мы не учим языку для путешественников. Мы учим языку для тех, кто живёт в Турции.</p>
-    </div>
+  <div class="section-inner">
+    <span class="section-tag" data-i18n="feat-tag">Возможности</span>
+    <h2 class="section-title" data-i18n="feat-title">Всё что нужно для реальной жизни в Турции</h2>
     <div class="features-grid">
       <div class="feature-card">
         <div class="feature-icon">🧠</div>
-        <h3 data-i18n="f1-title">Умное повторение</h3>
-        <p data-i18n="f1-text">SRS-алгоритм запоминает, какие слова ты забываешь, и повторяет их в нужный момент. Как Anki, но без настроек.</p>
+        <div class="feature-title" data-i18n="f1-title">Умное SRS-повторение</div>
+        <p class="feature-text" data-i18n="f1-text">Алгоритм запоминает что ты забываешь и повторяет это в нужный момент. Слова остаются в памяти надолго.</p>
       </div>
       <div class="feature-card">
         <div class="feature-icon">🎭</div>
-        <h3 data-i18n="f2-title">Реальные сценарии</h3>
-        <p data-i18n="f2-text">Диалоги из настоящей жизни в Турции: базар, ВНЖ (икамет), нотариус, врач, банк, аренда квартиры.</p>
+        <div class="feature-title" data-i18n="f2-title">Реальные диалоги</div>
+        <p class="feature-text" data-i18n="f2-text">Сценарии взяты из жизни русскоязычных в Турции. Не «где музей», а «где нотариус» и «нужен икамет».</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔤</div>
+        <div class="feature-title" data-i18n="f3-title">Транскрипция</div>
+        <p class="feature-text" data-i18n="f3-text">Каждое слово и фраза записаны русскими буквами. Говоришь правильно с первого дня, даже без знания алфавита.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🎙️</div>
+        <div class="feature-title" data-i18n="f4-title">Тренировка речи</div>
+        <p class="feature-text" data-i18n="f4-text">Произноси фразы вслух — микрофон оценивает произношение. Настоящий тренажёр разговорного турецкого.</p>
       </div>
       <div class="feature-card">
         <div class="feature-icon">📱</div>
-        <h3 data-i18n="f3-title">Офлайн PWA</h3>
-        <p data-i18n="f3-text">Работает без интернета. Установи как приложение на телефон и учи даже в метро или на пляже.</p>
+        <div class="feature-title" data-i18n="f5-title">Офлайн PWA</div>
+        <p class="feature-text" data-i18n="f5-text">Установи как приложение на телефон. Работает без интернета — в метро, на пляже, в горах.</p>
       </div>
       <div class="feature-card">
         <div class="feature-icon">🔥</div>
-        <h3 data-i18n="f4-title">Стрики и мотивация</h3>
-        <p data-i18n="f4-text">Система стриков, XP и достижений держит тебя в тонусе. 10 минут в день — и через месяц ты уже говоришь.</p>
+        <div class="feature-title" data-i18n="f6-title">Стрики и XP</div>
+        <p class="feature-text" data-i18n="f6-text">Система стриков, очков и достижений мотивирует учиться каждый день. Прогресс виден сразу.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===== HOW IT WORKS ===== -->
-<section class="how" id="how">
-  <div class="container">
-    <div class="section-header">
-      <span class="badge">Как это работает</span>
-      <h2 style="margin-top:12px" data-i18n="how-title">Три шага до первого разговора</h2>
-    </div>
-    <div class="steps">
-      <div class="step">
-        <div class="step-num">1</div>
-        <h3 data-i18n="step1-title">Войди через Google</h3>
-        <p data-i18n="step1-text">Регистрация занимает 30 секунд. Нажми «Войти», выбери аккаунт Google — и ты внутри.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">2</div>
-        <h3 data-i18n="step2-title">Учи сценарии</h3>
-        <p data-i18n="step2-text">Выбери сценарий из реальной жизни — базар, врач, ВНЖ. Проходи диалоги и запоминай слова.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">3</div>
-        <h3 data-i18n="step3-title">Говори по-турецки</h3>
-        <p data-i18n="step3-text">Тренируй произношение с микрофоном. Приложение слушает и оценивает твой турецкий.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== SCENARIOS ===== -->
-<section class="scenarios">
-  <div class="container">
-    <div class="section-header">
-      <span class="badge">Сценарии</span>
-      <h2 style="margin-top:12px" data-i18n="sc-title">Сценарии из настоящей жизни в Турции</h2>
-      <p data-i18n="sc-sub">Нажми на сценарий, чтобы увидеть примеры фраз</p>
-    </div>
-    <div class="scenarios-grid">
-
-      <div class="scenario-card" onclick="toggleScenario(this)">
-        <div class="scenario-head">
-          <div class="scenario-icon">🛒</div>
-          <div>
-            <h3>На базаре</h3>
-            <p>Цены, торговля, фрукты и овощи</p>
+<!-- ==================== HOW IT WORKS ==================== -->
+<section class="how">
+  <div class="section-inner">
+    <div class="how-grid">
+      <div>
+        <span class="section-tag" data-i18n="how-tag">Как это работает</span>
+        <h2 class="section-title" data-i18n="how-title">Три шага до первого разговора</h2>
+        <div class="how-steps">
+          <div class="how-step">
+            <div class="how-step-num">1</div>
+            <div>
+              <div class="how-step-title" data-i18n="step1-title">Войди через Google</div>
+              <p class="how-step-text" data-i18n="step1-text">Регистрация занимает 30 секунд. Нажми «Войти», выбери аккаунт — и ты внутри. Никаких форм и паролей.</p>
+            </div>
           </div>
-        </div>
-        <div class="scenario-body">
-          <div class="scenario-phrase">
-            <div class="tr">Bu ne kadar?</div>
-            <div class="transcription">бу не КА-дар</div>
-            <div class="ru">Сколько это стоит?</div>
+          <div class="how-step">
+            <div class="how-step-num">2</div>
+            <div>
+              <div class="how-step-title" data-i18n="step2-title">Выбери сценарий</div>
+              <p class="how-step-text" data-i18n="step2-text">Базар, ВНЖ, врач, аренда — выбирай то, что нужно прямо сейчас. Проходи диалоги и запоминай фразы.</p>
+            </div>
           </div>
-          <div class="scenario-phrase">
-            <div class="tr">Çok pahalı. İndirim var mı?</div>
-            <div class="transcription">чок па-ха-ЛЫ. ин-ди-РИМ вар мы?</div>
-            <div class="ru">Очень дорого. Есть скидка?</div>
-          </div>
-          <div class="scenario-phrase">
-            <div class="tr">Bir kilo lütfen.</div>
-            <div class="transcription">бир КИ-ло ЛЮТ-фен</div>
-            <div class="ru">Один килограмм, пожалуйста.</div>
+          <div class="how-step">
+            <div class="how-step-num">3</div>
+            <div>
+              <div class="how-step-title" data-i18n="step3-title">Говори по-турецки</div>
+              <p class="how-step-text" data-i18n="step3-text">Тренируй произношение с микрофоном. Повторяй слова по SRS. Через месяц ты уже справляешься сам.</p>
+            </div>
           </div>
         </div>
       </div>
-
-      <div class="scenario-card" onclick="toggleScenario(this)">
-        <div class="scenario-head">
-          <div class="scenario-icon">📋</div>
-          <div>
-            <h3>ВНЖ и икамет</h3>
-            <p>Документы, нотариус, чиновники</p>
+      <div>
+        <div class="demo-card">
+          <div class="demo-header">
+            <span class="demo-flag">🇹🇷</span>
+            <span class="demo-title">Урок: На базаре</span>
           </div>
-        </div>
-        <div class="scenario-body">
-          <div class="scenario-phrase">
-            <div class="tr">İkamet izni almak istiyorum.</div>
-            <div class="transcription">и-ка-МЕТ из-НИ ал-МАК ис-ти-ЙО-рум</div>
-            <div class="ru">Я хочу получить разрешение на проживание.</div>
+          <div class="demo-phrase">
+            <div class="demo-tr">Bu ne kadar?</div>
+            <div class="demo-transcription">бу не КА-дар</div>
+            <div class="demo-ru">Сколько это стоит?</div>
           </div>
-          <div class="scenario-phrase">
-            <div class="tr">Hangi belgeler gerekiyor?</div>
-            <div class="transcription">хан-ГИ бел-ГЕ-лер ге-ре-КИ-ЙОР</div>
-            <div class="ru">Какие документы нужны?</div>
+          <div class="demo-phrase">
+            <div class="demo-tr">Çok pahalı. İndirim var mı?</div>
+            <div class="demo-transcription">чок па-ха-ЛЫ. ин-ди-РИМ вар мы?</div>
+            <div class="demo-ru">Очень дорого. Есть скидка?</div>
           </div>
-          <div class="scenario-phrase">
-            <div class="tr">Randevu almam gerekiyor mu?</div>
-            <div class="transcription">ран-ДЕ-ву ал-МАМ ге-ре-КИ-ЙОР му?</div>
-            <div class="ru">Мне нужно записаться на приём?</div>
+          <div class="demo-phrase">
+            <div class="demo-tr">Bir kilo lütfen.</div>
+            <div class="demo-transcription">бир КИ-ло ЛЮТ-фен</div>
+            <div class="demo-ru">Один килограмм, пожалуйста.</div>
           </div>
-        </div>
-      </div>
-
-      <div class="scenario-card" onclick="toggleScenario(this)">
-        <div class="scenario-head">
-          <div class="scenario-icon">🏥</div>
-          <div>
-            <h3>У врача</h3>
-            <p>Симптомы, аптека, полис</p>
-          </div>
-        </div>
-        <div class="scenario-body">
-          <div class="scenario-phrase">
-            <div class="tr">Başım ağrıyor.</div>
-            <div class="transcription">ба-ШЫМ аа-РЫ-ЙОР</div>
-            <div class="ru">У меня болит голова.</div>
-          </div>
-          <div class="scenario-phrase">
-            <div class="tr">Ateşim var.</div>
-            <div class="transcription">а-ТЕ-шим ВАР</div>
-            <div class="ru">У меня температура.</div>
-          </div>
-          <div class="scenario-phrase">
-            <div class="tr">Bu ilacı nerede bulabilirim?</div>
-            <div class="transcription">бу и-ла-ЧЫ не-РЕ-де бу-ла-би-ли-РИМ?</div>
-            <div class="ru">Где я могу найти это лекарство?</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="scenario-card" onclick="toggleScenario(this)">
-        <div class="scenario-head">
-          <div class="scenario-icon">🏠</div>
-          <div>
-            <h3>Аренда квартиры</h3>
-            <p>Договор, депозит, хозяин</p>
-          </div>
-        </div>
-        <div class="scenario-body">
-          <div class="scenario-phrase">
-            <div class="tr">Kira ne kadar?</div>
-            <div class="transcription">ки-РА не КА-дар?</div>
-            <div class="ru">Сколько стоит аренда?</div>
-          </div>
-          <div class="scenario-phrase">
-            <div class="tr">Depozito var mı?</div>
-            <div class="transcription">де-по-ЗИ-то ВАР мы?</div>
-            <div class="ru">Есть депозит?</div>
-          </div>
-          <div class="scenario-phrase">
-            <div class="tr">Kira sözleşmesi imzalayabilir miyiz?</div>
-            <div class="transcription">ки-РА сёз-леш-МЕ-си им-за-ла-я-би-ЛИР ми-йиз?</div>
-            <div class="ru">Можем ли мы подписать договор аренды?</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="scenario-card" onclick="toggleScenario(this)">
-        <div class="scenario-head">
-          <div class="scenario-icon">🏦</div>
-          <div>
-            <h3>В банке</h3>
-            <p>Счёт, карта, переводы</p>
-          </div>
-        </div>
-        <div class="scenario-body">
-          <div class="scenario-phrase">
-            <div class="tr">Hesap açmak istiyorum.</div>
-            <div class="transcription">хе-САП ач-МАК ис-ти-ЙО-рум</div>
-            <div class="ru">Я хочу открыть счёт.</div>
-          </div>
-          <div class="scenario-phrase">
-            <div class="tr">Banka kartı nasıl alabilirim?</div>
-            <div class="transcription">бан-КА кар-ТЫ на-СЫЛ а-ла-би-ли-РИМ?</div>
-            <div class="ru">Как я могу получить банковскую карту?</div>
-          </div>
-          <div class="scenario-phrase">
-            <div class="tr">Para transferi yapmak istiyorum.</div>
-            <div class="transcription">па-РА транс-фе-РИ яп-МАК ис-ти-ЙО-рум</div>
-            <div class="ru">Я хочу сделать денежный перевод.</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="scenario-card" onclick="toggleScenario(this)">
-        <div class="scenario-head">
-          <div class="scenario-icon">🚌</div>
-          <div>
-            <h3>Транспорт</h3>
-            <p>Автобус, такси, Istanbulkart</p>
-          </div>
-        </div>
-        <div class="scenario-body">
-          <div class="scenario-phrase">
-            <div class="tr">Bu otobüs nereye gidiyor?</div>
-            <div class="transcription">бу о-то-БЮС не-РЕ-е ги-ди-ЙОР?</div>
-            <div class="ru">Куда идёт этот автобус?</div>
-          </div>
-          <div class="scenario-phrase">
-            <div class="tr">Taksimetre açar mısınız?</div>
-            <div class="transcription">так-си-МЕТ-ре а-ЧАР мы-сы-НЫЗ?</div>
-            <div class="ru">Включите счётчик, пожалуйста.</div>
-          </div>
-          <div class="scenario-phrase">
-            <div class="tr">Havalimanına nasıl gidebilirim?</div>
-            <div class="transcription">ха-ва-ли-ма-НЫ-на на-СЫЛ ги-де-би-ли-РИМ?</div>
-            <div class="ru">Как добраться до аэропорта?</div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ===== REVIEWS ===== -->
-<section class="reviews">
-  <div class="container">
-    <div class="section-header">
-      <span class="badge">Отзывы</span>
-      <h2 style="margin-top:12px" data-i18n="rev-title">Что говорят ученики</h2>
-    </div>
-    <div class="reviews-grid">
-      <div class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">«За 3 месяца стала объясняться на рынке без проблем. Хозяин квартиры удивился моему турецкому — он даже не понял, что я учусь по приложению!»</p>
-        <div class="review-author">
-          <div class="review-avatar">МК</div>
-          <div>
-            <div class="review-author-name">Марина К.</div>
-            <div class="review-author-loc">🇷🇺 Анталья, 8 месяцев с IziTurkish</div>
-          </div>
-        </div>
-      </div>
-      <div class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">«Помогло при получении икамета — знал все нужные слова и фразы. Сотрудник миграционной службы был приятно удивлён. Спасибо за сценарий про ВНЖ!»</p>
-        <div class="review-author">
-          <div class="review-avatar">АМ</div>
-          <div>
-            <div class="review-author-name">Андрей М.</div>
-            <div class="review-author-loc">🇷🇺 Стамбул, 1 год с IziTurkish</div>
-          </div>
-        </div>
-      </div>
-      <div class="review-card">
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">«Дочь (12 лет) учит вместе со мной. Сценарии сделаны именно для жизни в Турции — не для туристов. Duolingo не давал такого результата за год, а тут уже за 2 месяца говорим.»</p>
-        <div class="review-author">
-          <div class="review-avatar">СР</div>
-          <div>
-            <div class="review-author-name">Светлана Р.</div>
-            <div class="review-author-loc">🇷🇺 Алания, 6 месяцев с IziTurkish</div>
+          <div class="demo-phrase">
+            <div class="demo-tr">Teşekkür ederim!</div>
+            <div class="demo-transcription">те-шек-КЮР э-де-РИМ</div>
+            <div class="demo-ru">Спасибо большое!</div>
           </div>
         </div>
       </div>
@@ -489,306 +407,374 @@
   </div>
 </section>
 
-<!-- ===== PRICING ===== -->
+<!-- ==================== PWA ==================== -->
+<section class="pwa-section">
+  <div class="pwa-inner">
+    <span class="section-tag" data-i18n="pwa-tag">Офлайн приложение</span>
+    <h2 class="section-title" style="margin: 16px auto 16px; text-align:center; max-width:100%" data-i18n="pwa-title">Установи как приложение на телефон</h2>
+    <p class="pwa-subtitle" data-i18n="pwa-sub">IziTurkish — это PWA. Работает на любом устройстве без App Store и Google Play. Учи даже без интернета.</p>
+    <div class="pwa-benefits">
+      <div class="pwa-benefit"><span>✓</span> <span data-i18n="pwa1">iPhone и Android</span></div>
+      <div class="pwa-benefit"><span>✓</span> <span data-i18n="pwa2">Работает офлайн</span></div>
+      <div class="pwa-benefit"><span>✓</span> <span data-i18n="pwa3">Без App Store</span></div>
+      <div class="pwa-benefit"><span>✓</span> <span data-i18n="pwa4">Push-напоминания</span></div>
+      <div class="pwa-benefit"><span>✓</span> <span data-i18n="pwa5">Быстрый запуск</span></div>
+      <div class="pwa-benefit"><span>✓</span> <span data-i18n="pwa6">Планшет и компьютер</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== TESTIMONIALS ==================== -->
+<section class="testimonials">
+  <div class="section-inner">
+    <span class="section-tag" data-i18n="rev-tag">Отзывы</span>
+    <h2 class="section-title" data-i18n="rev-title">Что говорят наши ученики</h2>
+    <div class="testimonials-grid">
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">«За 3 месяца стала объясняться на рынке без проблем. Хозяин квартиры удивился моему турецкому — он даже не понял, что я учусь по приложению!»</p>
+        <div class="testi-author">Марина К.</div>
+        <div class="testi-city">🇷🇺 Анталья · 8 месяцев с IziTurkish</div>
+      </div>
+      <div class="testi-card featured">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">«Помогло при получении икамета — знал все нужные слова и фразы. Сотрудник миграционной службы был приятно удивлён. Спасибо за сценарий про ВНЖ!»</p>
+        <div class="testi-author">Андрей М.</div>
+        <div class="testi-city">🇷🇺 Стамбул · 1 год с IziTurkish</div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">«Дочь (12 лет) учит вместе со мной. Duolingo не давал такого результата за год, а тут уже за 2 месяца говорим в магазинах сами.»</p>
+        <div class="testi-author">Светлана Р.</div>
+        <div class="testi-city">🇷🇺 Алания · 6 месяцев с IziTurkish</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== PRICING ==================== -->
 <section class="pricing" id="pricing">
-  <div class="container">
-    <div class="section-header">
-      <span class="badge">Тарифы</span>
-      <h2 style="margin-top:12px" data-i18n="price-title">Простые цены без сюрпризов</h2>
-      <p data-i18n="price-sub">7 дней бесплатно на любом тарифе — без кредитной карты</p>
-    </div>
+  <div class="section-inner">
+    <span class="section-tag" data-i18n="price-tag">Тарифы</span>
+    <h2 class="section-title" data-i18n="price-title">Простые цены без сюрпризов</h2>
+    <p class="section-sub" data-i18n="price-sub">7 дней бесплатно на любом тарифе — без кредитной карты</p>
     <div class="pricing-grid">
       <div class="pricing-card">
-        <div class="pricing-label" data-i18n="plan1-label">Помесячно</div>
-        <div class="pricing-price">€8<span>.99/мес</span></div>
-        <div class="pricing-per" data-i18n="plan1-per">Оплата каждый месяц</div>
+        <div class="pricing-plan" data-i18n="plan1-label">ПОМЕСЯЧНО</div>
+        <div class="pricing-price">
+          <span class="pricing-amount">€8</span>
+          <span class="pricing-period">.99/мес</span>
+        </div>
+        <div class="pricing-billed" data-i18n="plan1-billed">Оплата каждый месяц</div>
+        <div class="pricing-desc" data-i18n="plan1-desc">Идеально чтобы попробовать и убедиться в результате</div>
         <ul class="pricing-features">
           <li data-i18n="pf1">150+ слов с транскрипцией</li>
           <li data-i18n="pf2">10 сценариев реальной жизни</li>
           <li data-i18n="pf3">Тренировка речи с микрофоном</li>
           <li data-i18n="pf4">30-дневный план обучения</li>
           <li data-i18n="pf5">Офлайн PWA</li>
-          <li data-i18n="pf6">Новости на турецком с переводом</li>
+          <li data-i18n="pf6">Новости на турецком</li>
         </ul>
-        <!-- TODO: заменить MONTHLY_PRODUCT_ID на реальный ID LemonSqueezy -->
-        <a href="https://iziturkish.lemonsqueezy.com/checkout/buy/MONTHLY_PRODUCT_ID" class="btn btn-outline" data-i18n="plan1-btn">Начать бесплатно →</a>
+        <!-- TODO: заменить MONTHLY_PRODUCT_ID -->
+        <a href="https://iziturkish.lemonsqueezy.com/checkout/buy/MONTHLY_PRODUCT_ID" class="btn-pricing-secondary" data-i18n="plan1-btn">Начать бесплатно →</a>
+        <p class="pricing-note" data-i18n="price-note">7 дней бесплатно</p>
       </div>
-      <div class="pricing-card popular">
-        <div class="pricing-label" data-i18n="plan2-label">Годовая</div>
-        <div class="pricing-price">€59<span>.88/год</span></div>
-        <div class="pricing-per">€4.99/мес</div>
-        <div class="pricing-save" data-i18n="plan2-save">Экономия 45%</div>
+      <div class="pricing-card pricing-popular">
+        <div class="pricing-badge" data-i18n="popular-badge">ПОПУЛЯРНЫЙ</div>
+        <div class="pricing-plan" data-i18n="plan2-label">ГОДОВАЯ</div>
+        <div class="pricing-price">
+          <span class="pricing-amount">€59</span>
+          <span class="pricing-period">.88/год</span>
+        </div>
+        <div class="pricing-billed">€4.99/мес — <strong>экономия 45%</strong></div>
+        <div class="pricing-desc" data-i18n="plan2-desc">Для тех, кто настроен серьёзно и хочет реального результата</div>
         <ul class="pricing-features">
           <li data-i18n="pf1">150+ слов с транскрипцией</li>
           <li data-i18n="pf2">10 сценариев реальной жизни</li>
           <li data-i18n="pf3">Тренировка речи с микрофоном</li>
           <li data-i18n="pf4">30-дневный план обучения</li>
           <li data-i18n="pf5">Офлайн PWA</li>
-          <li data-i18n="pf6">Новости на турецком с переводом</li>
+          <li data-i18n="pf6">Новости на турецком</li>
         </ul>
-        <!-- TODO: заменить YEARLY_PRODUCT_ID на реальный ID LemonSqueezy -->
-        <a href="https://iziturkish.lemonsqueezy.com/checkout/buy/YEARLY_PRODUCT_ID" class="btn btn-primary" data-i18n="plan2-btn">Начать бесплатно →</a>
+        <!-- TODO: заменить YEARLY_PRODUCT_ID -->
+        <a href="https://iziturkish.lemonsqueezy.com/checkout/buy/YEARLY_PRODUCT_ID" class="btn-pricing-primary" data-i18n="plan2-btn">Начать бесплатно →</a>
+        <p class="pricing-note" data-i18n="price-note">7 дней бесплатно</p>
       </div>
+    </div>
+    <div class="pricing-trust">
+      <span>🔒 Безопасная оплата</span>
+      <span>↩️ Возврат в течение 7 дней</span>
+      <span>❌ Отмена в любой момент</span>
     </div>
   </div>
 </section>
 
-<!-- ===== FAQ ===== -->
+<!-- ==================== FAQ ==================== -->
 <section class="faq">
-  <div class="container">
-    <div class="section-header">
-      <span class="badge">FAQ</span>
-      <h2 style="margin-top:12px" data-i18n="faq-title">Частые вопросы</h2>
-    </div>
+  <div class="section-inner">
+    <span class="section-tag" data-i18n="faq-tag">FAQ</span>
+    <h2 class="section-title" data-i18n="faq-title">Частые вопросы</h2>
     <div class="faq-list">
 
-      <div class="faq-item">
-        <div class="faq-question" onclick="toggleFaq(this)">
+      <div class="faq-item" id="faq-1">
+        <button class="faq-q" onclick="toggleFaq('faq-1')">
           <span data-i18n="faq1-q">Нужно ли знать турецкий алфавит, чтобы начать?</span>
-          <span class="icon">+</span>
+          <span class="faq-arrow" id="faq-1-arrow">▼</span>
+        </button>
+        <div class="faq-a" id="faq-1-a">
+          <p data-i18n="faq1-a">Нет. Каждое слово сопровождается транскрипцией русскими буквами. Вы сможете читать и произносить с первого дня. Алфавит изучается постепенно — а если знаешь русский, турецкий алфавит освоится очень быстро.</p>
         </div>
-        <div class="faq-answer" data-i18n="faq1-a">Нет. Каждое слово сопровождается транскрипцией русскими буквами. Ты сразу можешь произносить слова без знания алфавита. Алфавит можно выучить параллельно — в кабинете есть отдельный раздел.</div>
       </div>
 
-      <div class="faq-item">
-        <div class="faq-question" onclick="toggleFaq(this)">
+      <div class="faq-item" id="faq-2">
+        <button class="faq-q" onclick="toggleFaq('faq-2')">
           <span data-i18n="faq2-q">Сколько времени нужно в день?</span>
-          <span class="icon">+</span>
+          <span class="faq-arrow" id="faq-2-arrow">▼</span>
+        </button>
+        <div class="faq-a" id="faq-2-a">
+          <p data-i18n="faq2-a">Достаточно 10 минут в день. Один урок занимает 5–10 минут. Главное — регулярность. Ежедневные 10 минут дают лучший результат, чем 2 часа раз в неделю.</p>
         </div>
-        <div class="faq-answer" data-i18n="faq2-a">10 минут. Один урок занимает 5–10 минут. Стрик-система помогает учиться каждый день без пропусков. Можно выбрать дневную цель: 20, 50 или 100 XP.</div>
       </div>
 
-      <div class="faq-item">
-        <div class="faq-question" onclick="toggleFaq(this)">
+      <div class="faq-item" id="faq-3">
+        <button class="faq-q" onclick="toggleFaq('faq-3')">
           <span data-i18n="faq3-q">Чем IziTurkish отличается от Duolingo?</span>
-          <span class="icon">+</span>
+          <span class="faq-arrow" id="faq-3-arrow">▼</span>
+        </button>
+        <div class="faq-a" id="faq-3-a">
+          <p data-i18n="faq3-a">Duolingo создан для всех языков и всех аудиторий. IziTurkish создан специально для русскоязычных жителей Турции — с реальными сценариями (базар, икамет, банк, аренда), транскрипцией на русском и фразами, которые реально нужны каждый день.</p>
         </div>
-        <div class="faq-answer" data-i18n="faq3-a">Duolingo учит языку в общем — для любой аудитории в любой стране. IziTurkish создан специально для русских, живущих в Турции. Все сценарии взяты из реальной жизни: базар, ВНЖ (икамет), нотариус, врач, аренда квартиры. Мы не учим тому, как «спросить дорогу к музею».</div>
       </div>
 
-      <div class="faq-item">
-        <div class="faq-question" onclick="toggleFaq(this)">
+      <div class="faq-item" id="faq-4">
+        <button class="faq-q" onclick="toggleFaq('faq-4')">
           <span data-i18n="faq4-q">Как работает бесплатный период?</span>
-          <span class="icon">+</span>
+          <span class="faq-arrow" id="faq-4-arrow">▼</span>
+        </button>
+        <div class="faq-a" id="faq-4-a">
+          <p data-i18n="faq4-a">7 дней полного доступа без каких-либо ограничений — без кредитной карты. После пробного периода можно выбрать тариф или продолжить с ограниченным бесплатным доступом.</p>
         </div>
-        <div class="faq-answer" data-i18n="faq4-a">7 дней полного доступа — без кредитной карты. Просто войди через Google и начни учиться. После окончания пробного периода выбираешь тариф или продолжаешь бесплатно с ограниченным доступом.</div>
       </div>
 
-      <div class="faq-item">
-        <div class="faq-question" onclick="toggleFaq(this)">
+      <div class="faq-item" id="faq-5">
+        <button class="faq-q" onclick="toggleFaq('faq-5')">
           <span data-i18n="faq5-q">Можно ли отменить подписку?</span>
-          <span class="icon">+</span>
+          <span class="faq-arrow" id="faq-5-arrow">▼</span>
+        </button>
+        <div class="faq-a" id="faq-5-a">
+          <p data-i18n="faq5-a">Да, в любой момент через личный кабинет LemonSqueezy. После отмены подписка остаётся активной до конца оплаченного периода. Никаких штрафов и объяснений.</p>
         </div>
-        <div class="faq-answer" data-i18n="faq5-a">Да, в любой момент через личный кабинет LemonSqueezy. Никаких штрафов, никаких звонков и объяснений. Доступ сохраняется до конца оплаченного периода.</div>
       </div>
 
-      <div class="faq-item">
-        <div class="faq-question" onclick="toggleFaq(this)">
-          <span data-i18n="faq6-q">На каких устройствах работает?</span>
-          <span class="icon">+</span>
+      <div class="faq-item" id="faq-6">
+        <button class="faq-q" onclick="toggleFaq('faq-6')">
+          <span data-i18n="faq6-q">На каких устройствах работает приложение?</span>
+          <span class="faq-arrow" id="faq-6-arrow">▼</span>
+        </button>
+        <div class="faq-a" id="faq-6-a">
+          <p data-i18n="faq6-a">IziTurkish — это PWA (Progressive Web App). Работает в браузере на любом устройстве: iPhone, Android, планшет, компьютер. Можно установить на экран телефона как обычное приложение. Работает даже офлайн.</p>
         </div>
-        <div class="faq-answer" data-i18n="faq6-a">PWA — работает на iPhone, Android, планшете и компьютере. Добавь сайт на домашний экран телефона, и он будет работать как полноценное приложение. Офлайн тоже работает — уроки доступны без интернета.</div>
       </div>
 
     </div>
   </div>
 </section>
 
-<!-- ===== FINAL CTA ===== -->
+<!-- ==================== FINAL CTA ==================== -->
 <section class="final-cta">
-  <div class="container">
-    <h2 data-i18n="fcta-title">Начни говорить по-турецки уже сегодня</h2>
-    <p data-i18n="fcta-sub">7 дней полного доступа — без кредитной карты</p>
-    <a href="https://iziturkish.lemonsqueezy.com/checkout/buy/MONTHLY_PRODUCT_ID" class="btn btn-white btn-lg" data-i18n="fcta-btn">Попробовать бесплатно →</a>
+  <div class="final-cta-inner">
+    <div class="final-cta-emoji">🇹🇷</div>
+    <h2 class="final-cta-title" data-i18n="fcta-title">Начни говорить по-турецки уже сегодня</h2>
+    <p class="final-cta-sub" data-i18n="fcta-sub">7 дней полного доступа — без кредитной карты</p>
+    <!-- TODO: заменить MONTHLY_PRODUCT_ID -->
+    <a href="https://iziturkish.lemonsqueezy.com/checkout/buy/MONTHLY_PRODUCT_ID" class="btn-final" data-i18n="fcta-btn">
+      Попробовать бесплатно →
+    </a>
   </div>
 </section>
 
-<!-- ===== FOOTER ===== -->
-<footer>
-  <div class="container">
-    <div class="footer-inner">
-      <div class="footer-logo">🇹🇷 IziTurkish</div>
-      <div class="footer-links">
+<!-- ==================== FOOTER ==================== -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="nav-logo">
+        <span class="logo-icon">🇹🇷</span>
+        <span class="logo-text">IziTurkish</span>
+      </div>
+      <p class="footer-tagline">Турецкий язык для русскоязычных жителей Турции. 10 минут в день — и ты говоришь.</p>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <div class="footer-col-title">Приложение</div>
+        <a href="https://cabinet.iziturkish.com">Войти в кабинет</a>
         <a href="/blog/">Блог</a>
-        <a href="https://cabinet.iziturkish.com">Войти</a>
+        <a href="#pricing">Тарифы</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Компания</div>
         <a href="/privacy.html">Privacy Policy</a>
         <a href="/terms.html">Terms of Service</a>
         <a href="/refund.html">Refund Policy</a>
       </div>
-      <div class="footer-copy">© 2026 IziTurkish. Все права защищены.</div>
     </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 IziTurkish. Все права защищены.</span>
+    <span>🇹🇷 Для русскоязычных в Турции</span>
   </div>
 </footer>
 
 <script>
+// ===== NAV SCROLL =====
+window.addEventListener('scroll', function() {
+  document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 10);
+});
+
+// ===== FAQ =====
+function toggleFaq(id) {
+  const item = document.getElementById(id);
+  const answer = document.getElementById(id + '-a');
+  const arrow = document.getElementById(id + '-arrow');
+  const isOpen = item.classList.contains('open');
+
+  // close all
+  document.querySelectorAll('.faq-item').forEach(function(el) {
+    el.classList.remove('open');
+    el.querySelector('.faq-a').classList.remove('open');
+    el.querySelector('.faq-arrow').classList.remove('rotated');
+  });
+
+  if (!isOpen) {
+    item.classList.add('open');
+    answer.classList.add('open');
+    arrow.classList.add('rotated');
+  }
+}
+
 // ===== TRANSLATIONS =====
-const TRANSLATIONS = {
+const T = {
   ru: {
-    'nav-blog': 'Блог',
-    'nav-login': 'Войти в кабинет',
-    'nav-cta': 'Попробовать бесплатно',
-    'hero-title': 'Турецкий язык —<br><em>для жизни</em>, а не для экзамена',
-    'hero-subtitle': '10 минут в день по реальным сценариям из жизни в Турции. Базар, ВНЖ, врач, банк — говори уверенно уже через месяц.',
-    'hero-cta1': 'Попробовать 7 дней бесплатно',
-    'hero-cta2': 'Как это работает?',
-    'hero-trust-count': 'Уже 1 240 учеников',
-    'hero-trust-sub': 'учат турецкий вместе с нами',
-    'sp-count': '1 240+ учеников',
-    'sp-sub': 'по всей Турции',
-    'sp-rating': 'Рейтинг 5.0',
-    'sp-reviews': 'на основе отзывов',
-    'sp-cities': 'Анталья · Стамбул · Алания',
-    'sp-cities-sub': 'и другие города Турции',
-    'feat-title': 'Учи турецкий, который<br>реально работает в Турции',
-    'feat-sub': 'Мы не учим языку для путешественников. Мы учим языку для тех, кто живёт в Турции.',
-    'f1-title': 'Умное повторение',
-    'f1-text': 'SRS-алгоритм запоминает, какие слова ты забываешь, и повторяет их в нужный момент.',
-    'f2-title': 'Реальные сценарии',
-    'f2-text': 'Диалоги из настоящей жизни в Турции: базар, ВНЖ (икамет), нотариус, врач, банк, аренда.',
-    'f3-title': 'Офлайн PWA',
-    'f3-text': 'Работает без интернета. Установи как приложение на телефон и учи везде.',
-    'f4-title': 'Стрики и мотивация',
-    'f4-text': 'Система стриков, XP и достижений держит тебя в тонусе. 10 минут в день — и через месяц ты говоришь.',
-    'how-title': 'Три шага до первого разговора',
-    'step1-title': 'Войди через Google',
-    'step1-text': 'Регистрация занимает 30 секунд. Нажми «Войти», выбери аккаунт Google — и ты внутри.',
-    'step2-title': 'Учи сценарии',
-    'step2-text': 'Выбери сценарий из реальной жизни — базар, врач, ВНЖ. Проходи диалоги и запоминай слова.',
-    'step3-title': 'Говори по-турецки',
-    'step3-text': 'Тренируй произношение с микрофоном. Приложение слушает и оценивает твой турецкий.',
-    'sc-title': 'Сценарии из настоящей жизни в Турции',
-    'sc-sub': 'Нажми на сценарий, чтобы увидеть примеры фраз',
-    'rev-title': 'Что говорят ученики',
-    'price-title': 'Простые цены без сюрпризов',
-    'price-sub': '7 дней бесплатно на любом тарифе — без кредитной карты',
-    'plan1-label': 'Помесячно',
-    'plan1-per': 'Оплата каждый месяц',
-    'plan2-label': 'Годовая',
-    'plan2-save': 'Экономия 45%',
-    'plan1-btn': 'Начать бесплатно →',
-    'plan2-btn': 'Начать бесплатно →',
-    'pf1': '150+ слов с транскрипцией',
-    'pf2': '10 сценариев реальной жизни',
-    'pf3': 'Тренировка речи с микрофоном',
-    'pf4': '30-дневный план обучения',
-    'pf5': 'Офлайн PWA',
-    'pf6': 'Новости на турецком с переводом',
-    'faq-title': 'Частые вопросы',
-    'faq1-q': 'Нужно ли знать турецкий алфавит, чтобы начать?',
-    'faq1-a': 'Нет. Каждое слово сопровождается транскрипцией русскими буквами. Алфавит можно выучить параллельно.',
-    'faq2-q': 'Сколько времени нужно в день?',
-    'faq2-a': '10 минут. Один урок занимает 5–10 минут. Стрик-система помогает учиться каждый день.',
-    'faq3-q': 'Чем IziTurkish отличается от Duolingo?',
-    'faq3-a': 'IziTurkish создан специально для русских в Турции — базар, ВНЖ, нотариус, врач, аренда.',
-    'faq4-q': 'Как работает бесплатный период?',
-    'faq4-a': '7 дней полного доступа без кредитной карты.',
-    'faq5-q': 'Можно ли отменить подписку?',
-    'faq5-a': 'Да, в любой момент через кабинет LemonSqueezy. Никаких штрафов.',
-    'faq6-q': 'На каких устройствах работает?',
-    'faq6-a': 'PWA — iPhone, Android, планшет, компьютер. Офлайн тоже работает.',
-    'fcta-title': 'Начни говорить по-турецки уже сегодня',
-    'fcta-sub': '7 дней полного доступа — без кредитной карты',
-    'fcta-btn': 'Попробовать бесплатно →',
+    'nav-blog': 'Блог', 'nav-login': 'Войти в кабинет', 'nav-cta': 'Попробовать бесплатно',
+    'hero-badge': 'Специально для русскоязычных в Турции',
+    'hero-title-accent': 'не сложный.', 'hero-title-end': 'Просто учи с нами.',
+    'hero-sub': 'IziTurkish помогает русскоязычным жителям Турции освоить язык легко — через реальные диалоги, сценарии из жизни и умное повторение.',
+    'hero-cta': 'Начать бесплатно — 7 дней', 'hero-note': '7 дней бесплатно · Отмена в любой момент',
+    'stat1': 'слов и фраз', 'stat2': 'сценариев', 'stat3': 'в день',
+    'fc1-title': '7 дней подряд', 'fc1-sub': 'Отличный прогресс!',
+    'fc2-title': '+350 XP', 'fc2-sub': 'за эту неделю',
+    'fc3-title': 'Достижение!', 'fc3-sub': 'Первый разговор',
+    'proof-text': 'Нам доверяют русскоязычные жители Турции',
+    'pain-tag': 'Тебе знакомо?', 'pain-title': 'Жизнь в Турции без турецкого — это стресс', 'pain-sub': 'Большинство русскоязычных в Турции сталкиваются с одними и теми же проблемами',
+    'p1-title': 'На базаре — как в немом кино', 'p1-text': 'Продавцы говорят только по-турецки. Показываешь пальцем, платишь сколько скажут — часто переплачиваешь.',
+    'p2-title': 'ВНЖ — через переводчика за деньги', 'p2-text': 'Каждый раз платишь посреднику за простые вопросы. Или стоишь в очереди и не понимаешь, что тебе говорят.',
+    'p3-title': 'Врач — страшно без переводчика', 'p3-text': 'Объяснить симптомы сложно даже жестами. Google Translate в кабинете врача — не лучшее решение.',
+    'p4-title': 'Аренда — подписываешь вслепую', 'p4-text': 'Договор аренды на турецком — и ты просто ставишь подпись, надеясь на честность арендодателя.',
+    'p5-title': 'Банк — очереди и непонимание', 'p5-text': 'Открыть счёт, получить карту, сделать перевод — каждая операция превращается в квест с жестами и гуглом.',
+    'p6-title': 'Транспорт — едешь куда попало', 'p6-text': 'Объявления только на турецком. Не можешь спросить водителя, пропускаешь нужную остановку.',
+    'sol-tag': 'Решение', 'sol-title': 'Турецкий через сценарии из реальной жизни',
+    'sol1': '10+ сценариев из жизни в Турции — базар, ВНЖ, врач, банк, аренда',
+    'sol2': 'SRS-алгоритм: умное повторение слов в нужный момент — как Anki, но проще',
+    'sol3': 'Транскрипция русскими буквами к каждому слову и фразе',
+    'sol4': 'Тренировка произношения с микрофоном — приложение слушает и оценивает',
+    'sol5': 'Работает офлайн — учи в метро, на пляже, без интернета',
+    'sol-cta': 'Начать бесплатно →',
+    'feat-tag': 'Возможности', 'feat-title': 'Всё что нужно для реальной жизни в Турции',
+    'f1-title': 'Умное SRS-повторение', 'f1-text': 'Алгоритм запоминает что ты забываешь и повторяет это в нужный момент.',
+    'f2-title': 'Реальные диалоги', 'f2-text': 'Сценарии взяты из жизни русскоязычных в Турции — не «где музей», а «где нотариус».',
+    'f3-title': 'Транскрипция', 'f3-text': 'Каждое слово записано русскими буквами. Говоришь правильно с первого дня.',
+    'f4-title': 'Тренировка речи', 'f4-text': 'Произноси фразы вслух — микрофон оценивает произношение.',
+    'f5-title': 'Офлайн PWA', 'f5-text': 'Установи как приложение на телефон. Работает без интернета.',
+    'f6-title': 'Стрики и XP', 'f6-text': 'Система стриков, очков и достижений мотивирует учиться каждый день.',
+    'how-tag': 'Как это работает', 'how-title': 'Три шага до первого разговора',
+    'step1-title': 'Войди через Google', 'step1-text': 'Регистрация 30 секунд. Никаких форм и паролей.',
+    'step2-title': 'Выбери сценарий', 'step2-text': 'Базар, ВНЖ, врач, аренда — выбирай нужное прямо сейчас.',
+    'step3-title': 'Говори по-турецки', 'step3-text': 'Тренируй речь. Повторяй по SRS. Через месяц справляешься сам.',
+    'pwa-tag': 'Офлайн приложение', 'pwa-title': 'Установи как приложение на телефон',
+    'pwa-sub': 'IziTurkish — это PWA. Работает без App Store и Google Play. Учи даже без интернета.',
+    'pwa1': 'iPhone и Android', 'pwa2': 'Работает офлайн', 'pwa3': 'Без App Store', 'pwa4': 'Push-напоминания', 'pwa5': 'Быстрый запуск', 'pwa6': 'Планшет и компьютер',
+    'rev-tag': 'Отзывы', 'rev-title': 'Что говорят наши ученики',
+    'price-tag': 'Тарифы', 'price-title': 'Простые цены без сюрпризов', 'price-sub': '7 дней бесплатно на любом тарифе — без кредитной карты',
+    'plan1-label': 'ПОМЕСЯЧНО', 'plan1-billed': 'Оплата каждый месяц', 'plan1-desc': 'Идеально чтобы попробовать и убедиться в результате', 'plan1-btn': 'Начать бесплатно →',
+    'plan2-label': 'ГОДОВАЯ', 'plan2-desc': 'Для тех, кто настроен серьёзно', 'plan2-btn': 'Начать бесплатно →',
+    'popular-badge': 'ПОПУЛЯРНЫЙ', 'price-note': '7 дней бесплатно',
+    'pf1': '150+ слов с транскрипцией', 'pf2': '10 сценариев реальной жизни', 'pf3': 'Тренировка речи с микрофоном', 'pf4': '30-дневный план обучения', 'pf5': 'Офлайн PWA', 'pf6': 'Новости на турецком',
+    'faq-tag': 'FAQ', 'faq-title': 'Частые вопросы',
+    'faq1-q': 'Нужно ли знать турецкий алфавит, чтобы начать?', 'faq1-a': 'Нет. Каждое слово сопровождается транскрипцией русскими буквами. Вы сможете произносить с первого дня.',
+    'faq2-q': 'Сколько времени нужно в день?', 'faq2-a': 'Достаточно 10 минут в день. Один урок занимает 5–10 минут.',
+    'faq3-q': 'Чем IziTurkish отличается от Duolingo?', 'faq3-a': 'IziTurkish создан специально для русскоязычных в Турции — базар, икамет, банк, аренда.',
+    'faq4-q': 'Как работает бесплатный период?', 'faq4-a': '7 дней полного доступа без кредитной карты.',
+    'faq5-q': 'Можно ли отменить подписку?', 'faq5-a': 'Да, в любой момент через личный кабинет LemonSqueezy.',
+    'faq6-q': 'На каких устройствах работает?', 'faq6-a': 'PWA — iPhone, Android, планшет, компьютер. Офлайн тоже работает.',
+    'fcta-title': 'Начни говорить по-турецки уже сегодня', 'fcta-sub': '7 дней полного доступа — без кредитной карты', 'fcta-btn': 'Попробовать бесплатно →',
   },
   en: {
-    'nav-blog': 'Blog',
-    'nav-login': 'Go to App',
-    'nav-cta': 'Try for free',
-    'hero-title': 'Turkish language —<br><em>for life</em>, not for exams',
-    'hero-subtitle': '10 minutes a day through real-life scenarios in Turkey. Market, residency, doctor, bank — speak confidently within a month.',
-    'hero-cta1': 'Try 7 days for free',
-    'hero-cta2': 'How it works?',
-    'hero-trust-count': 'Already 1,240 students',
-    'hero-trust-sub': 'learning Turkish with us',
-    'sp-count': '1,240+ students',
-    'sp-sub': 'across Turkey',
-    'sp-rating': 'Rating 5.0',
-    'sp-reviews': 'based on reviews',
-    'sp-cities': 'Antalya · Istanbul · Alanya',
-    'sp-cities-sub': 'and other cities in Turkey',
-    'feat-title': 'Learn Turkish that actually<br>works in Turkey',
-    'feat-sub': 'We don\'t teach tourist Turkish. We teach the language for people who live in Turkey.',
-    'f1-title': 'Smart repetition',
-    'f1-text': 'SRS algorithm remembers which words you forget and repeats them at the right moment.',
-    'f2-title': 'Real scenarios',
-    'f2-text': 'Real-life dialogues in Turkey: market, residency, notary, doctor, bank, apartment rental.',
-    'f3-title': 'Offline PWA',
-    'f3-text': 'Works without internet. Install as an app on your phone and learn anywhere.',
-    'f4-title': 'Streaks & motivation',
-    'f4-text': 'Streaks, XP and achievements keep you going. 10 minutes a day and you\'re speaking in a month.',
-    'how-title': 'Three steps to your first conversation',
-    'step1-title': 'Sign in with Google',
-    'step1-text': 'Registration takes 30 seconds. Click "Sign in", choose your Google account — and you\'re in.',
-    'step2-title': 'Learn scenarios',
-    'step2-text': 'Choose a real-life scenario — market, doctor, residency. Go through dialogues and memorize words.',
-    'step3-title': 'Speak Turkish',
-    'step3-text': 'Practice pronunciation with your microphone. The app listens and rates your Turkish.',
-    'sc-title': 'Real-life scenarios in Turkey',
-    'sc-sub': 'Click a scenario to see example phrases',
-    'rev-title': 'What students say',
-    'price-title': 'Simple pricing, no surprises',
-    'price-sub': '7 days free on any plan — no credit card required',
-    'plan1-label': 'Monthly',
-    'plan1-per': 'Billed every month',
-    'plan2-label': 'Yearly',
-    'plan2-save': 'Save 45%',
-    'plan1-btn': 'Start free →',
-    'plan2-btn': 'Start free →',
-    'pf1': '150+ words with transcription',
-    'pf2': '10 real-life scenarios',
-    'pf3': 'Speech training with microphone',
-    'pf4': '30-day study plan',
-    'pf5': 'Offline PWA',
-    'pf6': 'Turkish news with translation',
-    'faq-title': 'Frequently asked questions',
-    'faq1-q': 'Do I need to know the Turkish alphabet to start?',
-    'faq1-a': 'No. Every word comes with a phonetic transcription. You can learn the alphabet in parallel.',
-    'faq2-q': 'How much time do I need per day?',
-    'faq2-a': '10 minutes. One lesson takes 5–10 minutes. The streak system helps you study every day.',
-    'faq3-q': 'How is IziTurkish different from Duolingo?',
-    'faq3-a': 'IziTurkish is built specifically for Russians living in Turkey — market, residency, notary, doctor, rental.',
-    'faq4-q': 'How does the free trial work?',
-    'faq4-a': '7 days of full access — no credit card needed.',
-    'faq5-q': 'Can I cancel my subscription?',
-    'faq5-a': 'Yes, anytime through your LemonSqueezy dashboard. No penalties.',
-    'faq6-q': 'What devices does it work on?',
-    'faq6-a': 'PWA — iPhone, Android, tablet, computer. Works offline too.',
-    'fcta-title': 'Start speaking Turkish today',
-    'fcta-sub': '7 days of full access — no credit card required',
-    'fcta-btn': 'Try for free →',
+    'nav-blog': 'Blog', 'nav-login': 'Go to App', 'nav-cta': 'Try for free',
+    'hero-badge': 'Made for Russian speakers in Turkey',
+    'hero-title-accent': "not hard.", 'hero-title-end': 'Just learn with us.',
+    'hero-sub': 'IziTurkish helps Russian speakers in Turkey master the language easily — through real dialogues, life scenarios and smart repetition.',
+    'hero-cta': 'Start free — 7 days', 'hero-note': '7 days free · Cancel anytime',
+    'stat1': 'words & phrases', 'stat2': 'scenarios', 'stat3': 'per day',
+    'fc1-title': '7 days in a row', 'fc1-sub': 'Great progress!',
+    'fc2-title': '+350 XP', 'fc2-sub': 'this week',
+    'fc3-title': 'Achievement!', 'fc3-sub': 'First conversation',
+    'proof-text': 'Trusted by Russian speakers across Turkey',
+    'pain-tag': 'Sound familiar?', 'pain-title': 'Life in Turkey without Turkish is stressful', 'pain-sub': 'Most Russian speakers in Turkey face the same challenges',
+    'p1-title': 'At the market — lost without words', 'p1-text': 'Sellers only speak Turkish. You point fingers, pay what they say — and often overpay.',
+    'p2-title': 'Residency — through a paid translator', 'p2-text': 'Every time you pay a middleman for simple questions. Or you stand in line understanding nothing.',
+    'p3-title': 'Doctor — scary without a translator', 'p3-text': 'Explaining symptoms with gestures is hard. Google Translate in a doctor\'s office is not the best solution.',
+    'p4-title': 'Rental — signing blindly', 'p4-text': 'Rental contract in Turkish — you just sign, hoping the landlord is honest.',
+    'p5-title': 'Bank — queues and confusion', 'p5-text': 'Opening an account, getting a card, making a transfer — every step becomes a quest.',
+    'p6-title': 'Transport — going anywhere', 'p6-text': 'Announcements only in Turkish. Can\'t ask the driver, miss your stop.',
+    'sol-tag': 'Solution', 'sol-title': 'Turkish through real-life scenarios',
+    'sol1': '10+ scenarios from life in Turkey — market, residency, doctor, bank, rental',
+    'sol2': 'SRS algorithm: smart repetition at the right moment — like Anki but simpler',
+    'sol3': 'Russian phonetic transcription for every word and phrase',
+    'sol4': 'Speech training with microphone — the app listens and rates you',
+    'sol5': 'Works offline — learn on the subway, beach, without internet',
+    'sol-cta': 'Start for free →',
+    'feat-tag': 'Features', 'feat-title': 'Everything you need for real life in Turkey',
+    'f1-title': 'Smart SRS repetition', 'f1-text': 'The algorithm remembers what you forget and repeats it at the right moment.',
+    'f2-title': 'Real dialogues', 'f2-text': 'Scenarios from real life in Turkey — not "where is the museum" but "where is the notary".',
+    'f3-title': 'Transcription', 'f3-text': 'Every word has Russian phonetics. Speak correctly from day one.',
+    'f4-title': 'Speech training', 'f4-text': 'Say phrases out loud — microphone rates your pronunciation.',
+    'f5-title': 'Offline PWA', 'f5-text': 'Install as an app on your phone. Works without internet.',
+    'f6-title': 'Streaks & XP', 'f6-text': 'Streaks, points and achievements motivate daily learning.',
+    'how-tag': 'How it works', 'how-title': 'Three steps to your first conversation',
+    'step1-title': 'Sign in with Google', 'step1-text': '30 seconds. No forms or passwords.',
+    'step2-title': 'Choose a scenario', 'step2-text': 'Market, residency, doctor, rental — pick what you need right now.',
+    'step3-title': 'Speak Turkish', 'step3-text': 'Practice speech. Repeat with SRS. In a month you handle it yourself.',
+    'pwa-tag': 'Offline app', 'pwa-title': 'Install as an app on your phone',
+    'pwa-sub': 'IziTurkish is a PWA. Works without App Store or Google Play. Learn even without internet.',
+    'pwa1': 'iPhone & Android', 'pwa2': 'Works offline', 'pwa3': 'No App Store', 'pwa4': 'Push notifications', 'pwa5': 'Fast launch', 'pwa6': 'Tablet & desktop',
+    'rev-tag': 'Reviews', 'rev-title': 'What our students say',
+    'price-tag': 'Pricing', 'price-title': 'Simple pricing, no surprises', 'price-sub': '7 days free on any plan — no credit card',
+    'plan1-label': 'MONTHLY', 'plan1-billed': 'Billed every month', 'plan1-desc': 'Perfect to try and see results', 'plan1-btn': 'Start free →',
+    'plan2-label': 'YEARLY', 'plan2-desc': 'For those serious about results', 'plan2-btn': 'Start free →',
+    'popular-badge': 'POPULAR', 'price-note': '7 days free',
+    'pf1': '150+ words with transcription', 'pf2': '10 real-life scenarios', 'pf3': 'Speech training with mic', 'pf4': '30-day study plan', 'pf5': 'Offline PWA', 'pf6': 'Turkish news',
+    'faq-tag': 'FAQ', 'faq-title': 'Frequently asked questions',
+    'faq1-q': 'Do I need to know the Turkish alphabet?', 'faq1-a': 'No. Every word has Russian phonetic transcription. You can pronounce from day one.',
+    'faq2-q': 'How much time per day?', 'faq2-a': '10 minutes a day is enough. One lesson is 5–10 minutes.',
+    'faq3-q': 'How is IziTurkish different from Duolingo?', 'faq3-a': 'IziTurkish is built for Russian speakers in Turkey — market, residency, bank, rental.',
+    'faq4-q': 'How does the free trial work?', 'faq4-a': '7 days of full access — no credit card.',
+    'faq5-q': 'Can I cancel?', 'faq5-a': 'Yes, anytime through your LemonSqueezy dashboard.',
+    'faq6-q': 'What devices does it work on?', 'faq6-a': 'PWA — iPhone, Android, tablet, computer. Works offline too.',
+    'fcta-title': 'Start speaking Turkish today', 'fcta-sub': '7 days of full access — no credit card', 'fcta-btn': 'Try for free →',
   }
 };
 
 function switchLang(lang) {
   document.getElementById('btn-ru').classList.toggle('active', lang === 'ru');
   document.getElementById('btn-en').classList.toggle('active', lang === 'en');
-  document.querySelectorAll('[data-i18n]').forEach(el => {
-    const key = el.dataset.i18n;
-    if (TRANSLATIONS[lang] && TRANSLATIONS[lang][key]) {
-      el.innerHTML = TRANSLATIONS[lang][key];
-    }
+  document.querySelectorAll('[data-i18n]').forEach(function(el) {
+    var key = el.dataset.i18n;
+    if (T[lang] && T[lang][key]) el.textContent = T[lang][key];
   });
-  localStorage.setItem('lang', lang);
+  localStorage.setItem('iziturkish-lang', lang);
 }
 
-// ===== FAQ =====
-function toggleFaq(el) {
-  const item = el.parentElement;
-  const isOpen = item.classList.contains('open');
-  document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
-  if (!isOpen) item.classList.add('open');
-}
-
-// ===== SCENARIOS =====
-function toggleScenario(card) {
-  const isOpen = card.classList.contains('open');
-  document.querySelectorAll('.scenario-card').forEach(c => c.classList.remove('open'));
-  if (!isOpen) card.classList.add('open');
-}
-
-// ===== INIT =====
 document.addEventListener('DOMContentLoaded', function() {
-  const lang = localStorage.getItem('lang') || 'ru';
+  var lang = localStorage.getItem('iziturkish-lang') || 'ru';
   if (lang !== 'ru') switchLang(lang);
 });
 </script>
