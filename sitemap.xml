@@ -2,11 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
+  <!-- Главные страницы -->
   <url>
     <loc>https://iziturkish.com/</loc>
     <priority>1.0</priority>
     <changefreq>weekly</changefreq>
-    <lastmod>2026-04-17</lastmod>
+    <lastmod>2026-04-21</lastmod>
     <xhtml:link rel="alternate" hreflang="ru" href="https://iziturkish.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://iziturkish.com/"/>
   </url>
@@ -15,30 +16,55 @@
     <loc>https://iziturkish.com/blog/</loc>
     <priority>0.9</priority>
     <changefreq>weekly</changefreq>
-    <lastmod>2026-04-17</lastmod>
+    <lastmod>2026-04-21</lastmod>
   </url>
 
-  <!-- Blog articles — будут добавлены после создания блога -->
-  <!--
-  <url><loc>https://iziturkish.com/blog/turetskiy-alfavit.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
-  -->
-
+  <!-- Юридические страницы -->
   <url>
     <loc>https://iziturkish.com/privacy.html</loc>
     <priority>0.3</priority>
     <changefreq>yearly</changefreq>
+    <lastmod>2026-04-17</lastmod>
   </url>
-
   <url>
     <loc>https://iziturkish.com/terms.html</loc>
     <priority>0.3</priority>
     <changefreq>yearly</changefreq>
+    <lastmod>2026-04-17</lastmod>
   </url>
-
   <url>
     <loc>https://iziturkish.com/refund.html</loc>
     <priority>0.3</priority>
     <changefreq>yearly</changefreq>
+    <lastmod>2026-04-17</lastmod>
   </url>
+
+  <!-- Блог — Батч 1: С чего начать -->
+  <url><loc>https://iziturkish.com/blog/turetskiy-alfavit.html</loc><priority>0.8</priority><changefreq>monthly</changefreq><lastmod>2026-04-17</lastmod></url>
+  <url><loc>https://iziturkish.com/blog/kak-govorit-po-turetski.html</loc><priority>0.8</priority><changefreq>monthly</changefreq><lastmod>2026-04-17</lastmod></url>
+  <url><loc>https://iziturkish.com/blog/slozhno-li-uchit-turetskiy.html</loc><priority>0.8</priority><changefreq>monthly</changefreq><lastmod>2026-04-17</lastmod></url>
+  <url><loc>https://iziturkish.com/blog/turetskaya-grammatika.html</loc><priority>0.8</priority><changefreq>monthly</changefreq><lastmod>2026-04-17</lastmod></url>
+  <url><loc>https://iziturkish.com/blog/turetskiy-frazy-dlya-turtsii.html</loc><priority>0.8</priority><changefreq>monthly</changefreq><lastmod>2026-04-17</lastmod></url>
+
+  <!-- Блог — Батч 2: Жизнь в Турции -->
+  <url><loc>https://iziturkish.com/blog/turetskiy-dlya-vnzh.html</loc><priority>0.8</priority><changefreq>monthly</changefreq><lastmod>2026-04-21</lastmod></url>
+  <url><loc>https://iziturkish.com/blog/turetskiy-v-apteke.html</loc><priority>0.8</priority><changefreq>monthly</changefreq><lastmod>2026-04-21</lastmod></url>
+  <url><loc>https://iziturkish.com/blog/kak-snyat-kvartiru-v-turtsii.html</loc><priority>0.8</priority><changefreq>monthly</changefreq><lastmod>2026-04-21</lastmod></url>
+  <url><loc>https://iziturkish.com/blog/turetskiy-na-rynke.html</loc><priority>0.8</priority><changefreq>monthly</changefreq><lastmod>2026-04-21</lastmod></url>
+  <url><loc>https://iziturkish.com/blog/turetskiy-v-banke.html</loc><priority>0.8</priority><changefreq>monthly</changefreq><lastmod>2026-04-21</lastmod></url>
+
+  <!-- Блог — Батч 3: Работа и бизнес -->
+  <url><loc>https://iziturkish.com/blog/turetskiy-dlya-raboty.html</loc><priority>0.8</priority><changefreq>monthly</changefreq><lastmod>2026-04-21</lastmod></url>
+  <url><loc>https://iziturkish.com/blog/otkryt-biznes-v-turtsii.html</loc><priority>0.8</priority><changefreq>monthly</changefreq><lastmod>2026-04-21</lastmod></url>
+  <url><loc>https://iziturkish.com/blog/turetskiy-v-restoran.html</loc><priority>0.8</priority><changefreq>monthly</changefreq><lastmod>2026-04-21</lastmod></url>
+  <url><loc>https://iziturkish.com/blog/turetskiy-v-transporte.html</loc><priority>0.8</priority><changefreq>monthly</changefreq><lastmod>2026-04-21</lastmod></url>
+  <url><loc>https://iziturkish.com/blog/turetskiy-v-shkole.html</loc><priority>0.8</priority><changefreq>monthly</changefreq><lastmod>2026-04-21</lastmod></url>
+
+  <!-- Блог — Батч 4: Культура и погружение -->
+  <url><loc>https://iziturkish.com/blog/turetskie-prazdniki.html</loc><priority>0.8</priority><changefreq>monthly</changefreq><lastmod>2026-04-21</lastmod></url>
+  <url><loc>https://iziturkish.com/blog/kak-podruzhitsya-s-turkom.html</loc><priority>0.8</priority><changefreq>monthly</changefreq><lastmod>2026-04-21</lastmod></url>
+  <url><loc>https://iziturkish.com/blog/turetskiy-yazyk-po-serialam.html</loc><priority>0.8</priority><changefreq>monthly</changefreq><lastmod>2026-04-21</lastmod></url>
+  <url><loc>https://iziturkish.com/blog/turetskie-vyrazheniya.html</loc><priority>0.8</priority><changefreq>monthly</changefreq><lastmod>2026-04-21</lastmod></url>
+  <url><loc>https://iziturkish.com/blog/turetskiy-za-30-dney.html</loc><priority>0.8</priority><changefreq>monthly</changefreq><lastmod>2026-04-21</lastmod></url>
 
 </urlset>
