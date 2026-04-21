@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Турецкая грамматика для начинающих — только самое важное | IziTurkish</title>
+  <meta name="description" content="Турецкая грамматика без воды: суффиксы, падежи, времена глаголов — только то, что нужно для жизни в Турции. Примеры с переводом.">
+  <link rel="canonical" href="https://iziturkish.com/blog/turetskaya-grammatika.html">
+  <meta property="og:title" content="Турецкая грамматика для начинающих — только самое важное">
+  <meta property="og:description" content="Суффиксы, падежи, времена глаголов — разбор с реальными примерами из жизни в Турции.">
+  <meta property="og:url" content="https://iziturkish.com/blog/turetskaya-grammatika.html">
+  <meta property="og:type" content="article">
+  <link rel="icon" href="../favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --red: #E30A17; --red-light: #ff4d57; --red-bg: #fff5f5; }
+    body { font-family: 'Inter', sans-serif; color: #1a1a2e; background: #fff; line-height: 1.7; }
+
+    nav { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,0.95); backdrop-filter: blur(12px); border-bottom: 1px solid #f0f0f0; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; }
+    .nav-logo { font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 1.2rem; color: #1a1a2e; text-decoration: none; }
+    .nav-logo span { color: var(--red); }
+    .nav-cta { background: var(--red); color: #fff; padding: 8px 18px; border-radius: 20px; text-decoration: none; font-family: 'Nunito', sans-serif; font-weight: 700; font-size: 0.9rem; transition: opacity .2s; }
+    .nav-cta:hover { opacity: .85; }
+
+    .article-wrap { max-width: 760px; margin: 0 auto; padding: 40px 24px 80px; }
+    .breadcrumb { font-size: 0.85rem; color: #888; margin-bottom: 24px; }
+    .breadcrumb a { color: #888; text-decoration: none; }
+    .breadcrumb a:hover { color: var(--red); }
+    .article-meta { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; flex-wrap: wrap; }
+    .reading-time { background: var(--red); color: #fff; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; font-family: 'Nunito', sans-serif; font-weight: 700; }
+    .article-date { color: #888; font-size: 0.85rem; }
+    h1 { font-family: 'Nunito', sans-serif; font-weight: 800; font-size: clamp(1.6rem, 4vw, 2.2rem); line-height: 1.25; margin-bottom: 16px; }
+    .article-intro { font-size: 1.1rem; color: #555; margin-bottom: 32px; border-left: 4px solid var(--red); padding-left: 16px; }
+    h2 { font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 1.4rem; margin: 40px 0 16px; color: #1a1a2e; }
+    h3 { font-family: 'Nunito', sans-serif; font-weight: 700; font-size: 1.1rem; margin: 28px 0 10px; color: #1a1a2e; }
+    p { margin-bottom: 16px; }
+    ul, ol { margin: 0 0 16px 20px; }
+    li { margin-bottom: 8px; }
+
+    .phrase-card { background: var(--red-bg); border-left: 4px solid var(--red); border-radius: 8px; padding: 16px 20px; margin: 20px 0; }
+    .phrase-card .tr { font-size: 1.1rem; font-weight: 600; color: var(--red); }
+    .phrase-card .ru { color: #555; font-size: 0.95rem; margin-top: 4px; }
+
+    .info-box { background: #f0f7ff; border-left: 4px solid #2563eb; border-radius: 8px; padding: 16px 20px; margin: 20px 0; }
+    .info-box strong { color: #2563eb; display: block; margin-bottom: 6px; }
+
+    .warning-box { background: #fffbeb; border-left: 4px solid #f59e0b; border-radius: 8px; padding: 16px 20px; margin: 20px 0; }
+    .warning-box strong { color: #b45309; display: block; margin-bottom: 6px; }
+
+    .cta-box { border: 2px solid var(--red); border-radius: 16px; padding: 28px; margin: 36px 0; text-align: center; background: var(--red-bg); }
+    .cta-box h3 { margin: 0 0 10px; font-size: 1.25rem; color: #1a1a2e; }
+    .cta-box p { margin: 0 0 20px; color: #555; }
+    .cta-btn { display: inline-block; background: var(--red); color: #fff; padding: 14px 32px; border-radius: 28px; font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 1rem; text-decoration: none; transition: opacity .2s; }
+    .cta-btn:hover { opacity: .85; }
+
+    /* SUFFIX TABLE */
+    .suffix-table { width: 100%; border-collapse: collapse; margin: 16px 0 24px; font-size: 0.92rem; }
+    .suffix-table th { background: var(--red); color: #fff; padding: 10px 14px; text-align: left; font-family: 'Nunito', sans-serif; }
+    .suffix-table td { padding: 9px 14px; border-bottom: 1px solid #f0f0f0; }
+    .suffix-table tr:nth-child(even) { background: #fafafa; }
+    .suffix-table .suffix { font-weight: 600; color: var(--red); }
+
+    /* RULE BOX */
+    .rule-box { background: #f0fdf4; border-left: 4px solid #16a34a; border-radius: 8px; padding: 16px 20px; margin: 20px 0; }
+    .rule-box strong { color: #15803d; display: block; margin-bottom: 6px; }
+
+    .related-links { background: #f9f9f9; border-radius: 12px; padding: 24px; margin-top: 48px; }
+    .related-links h3 { font-family: 'Nunito', sans-serif; font-weight: 800; margin-bottom: 14px; }
+    .related-links ul { list-style: none; margin: 0; padding: 0; }
+    .related-links li { margin-bottom: 10px; }
+    .related-links a { color: var(--red); text-decoration: none; font-weight: 500; }
+    .related-links a:hover { text-decoration: underline; }
+
+    footer { background: #0d0d1a; color: #aaa; padding: 40px 24px; margin-top: 60px; }
+    .footer-inner { max-width: 900px; margin: 0 auto; display: flex; gap: 40px; flex-wrap: wrap; justify-content: space-between; }
+    .footer-brand { font-family: 'Nunito', sans-serif; font-size: 1.4rem; font-weight: 800; color: #fff; margin-bottom: 8px; }
+    .footer-col h4 { color: #fff; font-family: 'Nunito', sans-serif; margin-bottom: 12px; }
+    .footer-col a { display: block; color: #aaa; text-decoration: none; margin-bottom: 6px; font-size: 0.9rem; }
+    .footer-col a:hover { color: #fff; }
+    .footer-copy { text-align: center; margin-top: 32px; font-size: 0.8rem; opacity: .6; border-top: 1px solid #222; padding-top: 20px; }
+
+    @media (max-width: 600px) {
+      .article-wrap { padding: 24px 16px 60px; }
+      .suffix-table { font-size: 0.82rem; }
+      .suffix-table th, .suffix-table td { padding: 7px 8px; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Турецкая грамматика для начинающих — только самое важное",
+    "description": "Турецкая грамматика без воды: суффиксы, падежи, времена глаголов для жизни в Турции.",
+    "author": { "@type": "Organization", "name": "IziTurkish" },
+    "publisher": { "@type": "Organization", "name": "IziTurkish", "logo": { "@type": "ImageObject", "url": "https://iziturkish.com/og-image.png" } },
+    "datePublished": "2026-04-17",
+    "url": "https://iziturkish.com/blog/turetskaya-grammatika.html"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "IziTurkish", "item": "https://iziturkish.com" },
+      { "@type": "ListItem", "position": 2, "name": "Блог", "item": "https://iziturkish.com/blog/" },
+      { "@type": "ListItem", "position": 3, "name": "Турецкая грамматика для начинающих" }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<nav>
+  <a href="https://iziturkish.com" class="nav-logo">Izi<span>Turkish</span> 🇹🇷</a>
+  <a href="https://cabinet.iziturkish.com" class="nav-cta">Начать бесплатно</a>
+</nav>
+
+<div class="article-wrap">
+  <div class="breadcrumb">
+    <a href="https://iziturkish.com">IziTurkish</a> › <a href="https://iziturkish.com/blog/">Блог</a> › Турецкая грамматика для начинающих
+  </div>
+
+  <div class="article-meta">
+    <span class="reading-time">⏱ 8 мин</span>
+    <span class="article-date">17 апреля 2026</span>
+  </div>
+
+  <h1>Турецкая грамматика для начинающих — только самое важное</h1>
+
+  <p class="article-intro">
+    Не пугайтесь слова «грамматика». В турецком она очень логичная — почти без исключений. Вот минимум, который нужно знать, чтобы строить настоящие предложения и понимать турков в быту.
+  </p>
+
+  <div class="cta-box" id="cta-top">
+    <h3>Грамматика лучше усваивается в контексте</h3>
+    <p>IziTurkish учит фразами из реальной жизни — вы сразу видите, как работают суффиксы в деле.</p>
+    <a href="https://cabinet.iziturkish.com" class="cta-btn">Попробовать бесплатно →</a>
+  </div>
+
+  <h2>Принцип турецкого: суффиксы строят смысл</h2>
+
+  <p>Турецкий — агглютинативный язык. Это значит, что к корню слова добавляются суффиксы, каждый из которых несёт свой смысл. Как кирпичики. Главное — выучить правила сборки.</p>
+
+  <div class="rule-box">
+    <strong>✅ Главное правило</strong>
+    В турецком почти нет исключений. Выучил правило — применяй ко всем словам. Это огромное преимущество по сравнению с русским или английским.
+  </div>
+
+  <h2>1. Гармония гласных — сердце турецкого</h2>
+
+  <p>Суффиксы в турецком «подстраиваются» под гласную в корне слова. Это называется <strong>гармония гласных</strong> (vokal uyumu). Сначала кажется сложным, но ухо привыкает быстро.</p>
+
+  <p>Основное правило: если в последнем слоге корня стоит задняя гласная (a, ı, o, u), суффикс тоже берёт заднюю гласную. Если передняя (e, i, ö, ü) — суффикс берёт переднюю.</p>
+
+  <table class="suffix-table">
+    <tr><th>Корень</th><th>Последняя гласная</th><th>Суффикс «в» (-de/-da)</th><th>Перевод</th></tr>
+    <tr><td>ev (дом)</td><td>e → передняя</td><td class="suffix">ev<strong>de</strong></td><td>в доме</td></tr>
+    <tr><td>okul (школа)</td><td>u → задняя</td><td class="suffix">okul<strong>da</strong></td><td>в школе</td></tr>
+    <tr><td>iş (работа)</td><td>i → передняя</td><td class="suffix">iş<strong>te</strong></td><td>на работе</td></tr>
+    <tr><td>hastane (больница)</td><td>e → передняя</td><td class="suffix">hastane<strong>de</strong></td><td>в больнице</td></tr>
+    <tr><td>market (магазин)</td><td>e → передняя</td><td class="suffix">market<strong>te</strong></td><td>в магазине</td></tr>
+    <tr><td>araba (машина)</td><td>a → задняя</td><td class="suffix">araba<strong>da</strong></td><td>в машине</td></tr>
+  </table>
+
+  <div class="info-box">
+    <strong>💡 Лайфхак для быстрого освоения</strong>
+    Не запоминайте правило — просто произносите слова вслух. Носители языка говорят «как удобно», и вы быстро почувствуете, какая гласная «звучит правильно».
+  </div>
+
+  <h2>2. Падежи: как не заблудиться в суффиксах</h2>
+
+  <p>В русском 6 падежей, в турецком — тоже 6 основных. Но они задаются суффиксами (не предлогами, как в английском), и для каждого есть чёткое правило.</p>
+
+  <table class="suffix-table">
+    <tr><th>Падеж</th><th>Суффикс</th><th>Пример</th><th>Перевод</th></tr>
+    <tr><td>Именительный (кто? что?)</td><td class="suffix">—</td><td>ev</td><td>дом</td></tr>
+    <tr><td>Родительный (чей? чего?)</td><td class="suffix">-(n)ın / -(n)in / -(n)un / -(n)ün</td><td>evin</td><td>дома (чей?)</td></tr>
+    <tr><td>Дательный (кому? куда?)</td><td class="suffix">-(y)a / -(y)e</td><td>eve</td><td>домой / к дому</td></tr>
+    <tr><td>Местный (где? в чём?)</td><td class="suffix">-da / -de / -ta / -te</td><td>evde</td><td>дома (где?)</td></tr>
+    <tr><td>Исходный (откуда?)</td><td class="suffix">-dan / -den / -tan / -ten</td><td>evden</td><td>из дома</td></tr>
+    <tr><td>Винительный (кого? что?)</td><td class="suffix">-(y)ı / -(y)i / -(y)u / -(y)ü</td><td>evi</td><td>дом (вижу дом)</td></tr>
+  </table>
+
+  <div class="phrase-card">
+    <div class="tr">Eve gidiyorum. Evde oturuyorum. Evden çıkıyorum.</div>
+    <div class="ru">Иду домой. Сижу дома. Выхожу из дома.</div>
+  </div>
+
+  <h2>3. Порядок слов — глагол в конце</h2>
+
+  <p>В турецком предложении глагол стоит в самом конце. Это главное отличие от русского и главный источник путаницы для новичков.</p>
+
+  <table class="suffix-table">
+    <tr><th>По-турецки</th><th>Дословно</th><th>По-русски</th></tr>
+    <tr><td>Ben çay içiyorum.</td><td>Я чай пью.</td><td>Я пью чай.</td></tr>
+    <tr><td>O markete gidiyor.</td><td>Он в-магазин идёт.</td><td>Он идёт в магазин.</td></tr>
+    <tr><td>Biz Türkçe öğreniyoruz.</td><td>Мы турецкий учим.</td><td>Мы учим турецкий.</td></tr>
+    <tr><td>Ne kadar ödeyeceğim?</td><td>Сколько я-заплачу?</td><td>Сколько я должен заплатить?</td></tr>
+  </table>
+
+  <div class="warning-box">
+    <strong>⚠️ Важно в разговоре</strong>
+    В разговорной речи порядок слов менее жёсткий, чем в письменном турецком. Турки поймут вас, даже если вы поставите глагол не в конец — главное правильно использовать суффиксы.
+  </div>
+
+  <h2>4. Глаголы: настоящее время</h2>
+
+  <p>Турецкий глагол всегда заканчивается на <strong>-mak</strong> или <strong>-mek</strong> (это инфинитив). Чтобы образовать настоящее время, отрезаем -mak/-mek, добавляем суффикс времени и личное окончание.</p>
+
+  <p>Настоящее длительное время (что делаю прямо сейчас) строится так: <strong>корень + -(i)yor + личное окончание</strong></p>
+
+  <table class="suffix-table">
+    <tr><th>Лицо</th><th>Окончание</th><th>gel + iyor + …</th><th>Перевод</th></tr>
+    <tr><td>Ben (я)</td><td class="suffix">-um</td><td>geliyorum</td><td>я иду (прихожу)</td></tr>
+    <tr><td>Sen (ты)</td><td class="suffix">-sun</td><td>geliyorsun</td><td>ты идёшь</td></tr>
+    <tr><td>O (он/она/оно)</td><td class="suffix">—</td><td>geliyor</td><td>он идёт</td></tr>
+    <tr><td>Biz (мы)</td><td class="suffix">-uz</td><td>geliyoruz</td><td>мы идём</td></tr>
+    <tr><td>Siz (вы)</td><td class="suffix">-sunuz</td><td>geliyorsunuz</td><td>вы идёте</td></tr>
+    <tr><td>Onlar (они)</td><td class="suffix">-lar/-ler</td><td>geliyorlar</td><td>они идут</td></tr>
+  </table>
+
+  <div class="phrase-card">
+    <div class="tr">Ne yapıyorsun? — Türkçe öğreniyorum.</div>
+    <div class="ru">Что делаешь? — Учу турецкий.</div>
+  </div>
+
+  <h2>5. Отрицание — проще простого</h2>
+
+  <p>Для отрицания добавляем <strong>-me/-ma</strong> после корня глагола, перед суффиксом времени.</p>
+
+  <div class="phrase-card">
+    <div class="tr">gidiyorum → gitmiyorum</div>
+    <div class="ru">я иду → я не иду</div>
+  </div>
+
+  <div class="phrase-card">
+    <div class="tr">Türkçe bilmiyorum. / Anlamıyorum.</div>
+    <div class="ru">Я не знаю турецкого. / Я не понимаю.</div>
+  </div>
+
+  <h2>6. Вопросительная частица «mi»</h2>
+
+  <p>Вопрос в турецком образуется добавлением частицы <strong>mi/mı/mu/mü</strong> (гармония гласных!). Она пишется отдельно и ставится перед личным окончанием глагола.</p>
+
+  <table class="suffix-table">
+    <tr><th>Утверждение</th><th>Вопрос</th><th>Перевод вопроса</th></tr>
+    <tr><td>Türksün. (Ты турок.)</td><td>Türk müsün?</td><td>Ты турок?</td></tr>
+    <tr><td>Gidiyorsun. (Ты идёшь.)</td><td>Gidiyor musun?</td><td>Ты идёшь?</td></tr>
+    <tr><td>Anladın. (Ты понял.)</td><td>Anladın mı?</td><td>Ты понял?</td></tr>
+  </table>
+
+  <div class="phrase-card">
+    <div class="tr">Türkçe biliyor musunuz?</div>
+    <div class="ru">Вы знаете турецкий?</div>
+  </div>
+
+  <h2>7. Притяжательные суффиксы — «мой/твой/его»</h2>
+
+  <p>Вместо отдельных слов «мой», «твой», «его» в турецком используются суффиксы, которые присоединяются к существительному.</p>
+
+  <table class="suffix-table">
+    <tr><th>Суффикс</th><th>Пример (ev = дом)</th><th>Перевод</th></tr>
+    <tr><td class="suffix">-(i)m</td><td>evim</td><td>мой дом</td></tr>
+    <tr><td class="suffix">-(i)n</td><td>evin</td><td>твой дом</td></tr>
+    <tr><td class="suffix">-(s)i</td><td>evi</td><td>его/её дом</td></tr>
+    <tr><td class="suffix">-(i)miz</td><td>evimiz</td><td>наш дом</td></tr>
+    <tr><td class="suffix">-(i)niz</td><td>eviniz</td><td>ваш дом</td></tr>
+    <tr><td class="suffix">-leri</td><td>evleri</td><td>их дом</td></tr>
+  </table>
+
+  <div class="phrase-card">
+    <div class="tr">Pasaportunuz var mı? / Kimliğiniz?</div>
+    <div class="ru">Ваш паспорт есть? / Ваше удостоверение?</div>
+  </div>
+
+  <h2>Что учить в первую очередь</h2>
+
+  <div class="info-box">
+    <strong>📋 Приоритеты для жизни в Турции</strong>
+    <ol style="margin-top: 8px;">
+      <li>Настоящее время глаголов (-iyor)</li>
+      <li>Местный падеж (-de/-da) — «где я нахожусь»</li>
+      <li>Дательный падеж (-e/-a) — «куда я иду»</li>
+      <li>Вопрос «var mı?» — «есть ли?»</li>
+      <li>Отрицание (-me/-ma) — «не могу/не хочу»</li>
+    </ol>
+  </div>
+
+  <p>Остальное — прошедшие времена, сослагательное наклонение, сложные причастия — придёт само, когда вы начнёте слышать и читать настоящий турецкий.</p>
+
+  <div class="cta-box" id="cta-bottom">
+    <h3>Практикуйте грамматику через реальные фразы</h3>
+    <p>IziTurkish — приложение для русскоязычных в Турции. Учите не правила, а сценарии: рынок, больница, аренда, ВНЖ.</p>
+    <a href="https://cabinet.iziturkish.com" class="cta-btn">Начать бесплатно →</a>
+  </div>
+
+  <div class="related-links">
+    <h3>Читайте также</h3>
+    <ul>
+      <li><a href="turetskiy-alfavit.html">Турецкий алфавит за 1 вечер — полный разбор всех 29 букв</a></li>
+      <li><a href="kak-govorit-po-turetski.html">Как научиться говорить по-турецки с нуля</a></li>
+      <li><a href="slozhno-li-uchit-turetskiy.html">Сложно ли учить турецкий русскому — честный ответ</a></li>
+      <li><a href="turetskiy-frazy-dlya-turtsii.html">50 фраз для жизни в Турции — базовый разговорник</a></li>
+    </ul>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">IziTurkish 🇹🇷</div>
+      <p style="font-size:0.85rem;">Турецкий для русских в Турции</p>
+    </div>
+    <div class="footer-col">
+      <h4>Приложение</h4>
+      <a href="https://cabinet.iziturkish.com">Войти</a>
+      <a href="https://iziturkish.com/#pricing">Тарифы</a>
+      <a href="https://iziturkish.com/blog/">Блог</a>
+    </div>
+    <div class="footer-col">
+      <h4>Семья Izi</h4>
+      <a href="https://izigreek.com">IziGreek 🇬🇷 — Греческий</a>
+      <a href="https://iziserb.com">IziSerb 🇷🇸 — Сербский</a>
+    </div>
+    <div class="footer-col">
+      <h4>Компания</h4>
+      <a href="https://iziturkish.com/privacy.html">Конфиденциальность</a>
+      <a href="https://iziturkish.com/terms.html">Условия</a>
+      <a href="https://iziturkish.com/refund.html">Возврат</a>
+    </div>
+  </div>
+  <div class="footer-copy">© 2026 IziTurkish. Все права защищены.</div>
+</footer>
+
+<script>
+  if (new URLSearchParams(window.location.search).get('ref') === 'cabinet') {
+    document.querySelectorAll('#cta-top, #cta-bottom').forEach(el => el.style.display = 'none');
+  }
+</script>
+</body>
+</html>

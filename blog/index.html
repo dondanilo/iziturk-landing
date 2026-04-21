@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Блог о турецком языке — IziTurkish</title>
+  <meta name="description" content="Статьи о турецком языке для русскоязычных в Турции: алфавит, грамматика, фразы, советы по изучению.">
+  <link rel="canonical" href="https://iziturkish.com/blog/">
+  <meta property="og:title" content="Блог о турецком языке — IziTurkish">
+  <meta property="og:description" content="Статьи о турецком языке для русскоязычных в Турции.">
+  <meta property="og:url" content="https://iziturkish.com/blog/">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="../favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --red: #E30A17; --red-bg: #fff5f5; }
+    body { font-family: 'Inter', sans-serif; color: #1a1a2e; background: #fff; line-height: 1.7; }
+
+    nav { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,0.95); backdrop-filter: blur(12px); border-bottom: 1px solid #f0f0f0; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; }
+    .nav-logo { font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 1.2rem; color: #1a1a2e; text-decoration: none; }
+    .nav-logo span { color: var(--red); }
+    .nav-cta { background: var(--red); color: #fff; padding: 8px 18px; border-radius: 20px; text-decoration: none; font-family: 'Nunito', sans-serif; font-weight: 700; font-size: 0.9rem; transition: opacity .2s; }
+    .nav-cta:hover { opacity: .85; }
+
+    /* HERO */
+    .blog-hero { background: linear-gradient(135deg, #1a1a2e 0%, #2d0a0d 100%); padding: 64px 24px 56px; text-align: center; }
+    .blog-hero .breadcrumb { font-size: 0.85rem; color: #aaa; margin-bottom: 20px; }
+    .blog-hero .breadcrumb a { color: #aaa; text-decoration: none; }
+    .blog-hero .breadcrumb a:hover { color: #fff; }
+    .blog-hero h1 { font-family: 'Nunito', sans-serif; font-weight: 800; font-size: clamp(1.8rem, 5vw, 2.8rem); color: #fff; margin-bottom: 14px; }
+    .blog-hero p { color: #ccc; font-size: 1.05rem; max-width: 520px; margin: 0 auto; }
+
+    /* CATEGORIES */
+    .categories { max-width: 900px; margin: 0 auto; padding: 48px 24px 0; }
+    .cat-title { font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 1.3rem; color: #1a1a2e; margin-bottom: 20px; display: flex; align-items: center; gap: 10px; }
+    .cat-title::after { content: ''; flex: 1; height: 2px; background: #f0f0f0; }
+
+    /* CARDS GRID */
+    .cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; margin-bottom: 48px; }
+    .card { border: 1px solid #f0f0f0; border-radius: 16px; overflow: hidden; text-decoration: none; color: inherit; transition: box-shadow .2s, transform .2s; display: flex; flex-direction: column; }
+    .card:hover { box-shadow: 0 8px 32px rgba(227,10,23,0.1); transform: translateY(-3px); }
+    .card-badge { background: var(--red); color: #fff; font-size: 0.75rem; font-family: 'Nunito', sans-serif; font-weight: 700; padding: 4px 12px; display: inline-block; border-radius: 0 0 8px 0; }
+    .card-body { padding: 20px; flex: 1; display: flex; flex-direction: column; }
+    .card-emoji { font-size: 2rem; margin-bottom: 12px; }
+    .card-title { font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 1.05rem; color: #1a1a2e; margin-bottom: 8px; line-height: 1.3; }
+    .card-desc { color: #666; font-size: 0.88rem; flex: 1; }
+    .card-meta { margin-top: 16px; display: flex; align-items: center; gap: 8px; font-size: 0.8rem; color: #999; }
+    .card-meta .time { background: var(--red-bg); color: var(--red); padding: 2px 8px; border-radius: 10px; font-weight: 600; }
+
+    /* CTA BANNER */
+    .cta-banner { background: linear-gradient(135deg, var(--red) 0%, #c00010 100%); border-radius: 20px; padding: 40px 32px; margin: 0 24px 60px; text-align: center; max-width: 852px; margin-left: auto; margin-right: auto; }
+    .cta-banner h2 { font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 1.6rem; color: #fff; margin-bottom: 10px; }
+    .cta-banner p { color: rgba(255,255,255,0.85); margin-bottom: 24px; }
+    .cta-btn { display: inline-block; background: #fff; color: var(--red); padding: 14px 36px; border-radius: 28px; font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 1rem; text-decoration: none; transition: opacity .2s; }
+    .cta-btn:hover { opacity: .9; }
+
+    footer { background: #0d0d1a; color: #aaa; padding: 40px 24px; }
+    .footer-inner { max-width: 900px; margin: 0 auto; display: flex; gap: 40px; flex-wrap: wrap; justify-content: space-between; }
+    .footer-brand { font-family: 'Nunito', sans-serif; font-size: 1.4rem; font-weight: 800; color: #fff; margin-bottom: 8px; }
+    .footer-col h4 { color: #fff; font-family: 'Nunito', sans-serif; margin-bottom: 12px; }
+    .footer-col a { display: block; color: #aaa; text-decoration: none; margin-bottom: 6px; font-size: 0.9rem; }
+    .footer-col a:hover { color: #fff; }
+    .footer-copy { text-align: center; margin-top: 32px; font-size: 0.8rem; opacity: .6; border-top: 1px solid #222; padding-top: 20px; }
+
+    @media (max-width: 600px) {
+      .cards-grid { grid-template-columns: 1fr; }
+      .cta-banner { padding: 28px 20px; border-radius: 16px; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Блог IziTurkish",
+    "description": "Статьи о турецком языке для русскоязычных в Турции",
+    "url": "https://iziturkish.com/blog/",
+    "publisher": { "@type": "Organization", "name": "IziTurkish" }
+  }
+  </script>
+</head>
+<body>
+
+<nav>
+  <a href="https://iziturkish.com" class="nav-logo">Izi<span>Turkish</span> 🇹🇷</a>
+  <a href="https://cabinet.iziturkish.com" class="nav-cta">Начать бесплатно</a>
+</nav>
+
+<div class="blog-hero">
+  <div class="breadcrumb">
+    <a href="https://iziturkish.com">IziTurkish</a> › Блог
+  </div>
+  <h1>Блог о турецком языке</h1>
+  <p>Статьи для русскоязычных, которые живут в Турции или только переехали. Без воды — только то, что работает.</p>
+</div>
+
+<div class="categories">
+
+  <div class="cat-title">С чего начать</div>
+  <div class="cards-grid">
+    <a href="turetskiy-alfavit.html" class="card">
+      <span class="card-badge">Основы</span>
+      <div class="card-body">
+        <div class="card-emoji">🔤</div>
+        <div class="card-title">Турецкий алфавит за 1 вечер — полный разбор всех 29 букв</div>
+        <div class="card-desc">Все буквы с произношением, 5 самых коварных звуков и примеры фраз для каждого.</div>
+        <div class="card-meta"><span class="time">⏱ 7 мин</span><span>17 апреля 2026</span></div>
+      </div>
+    </a>
+    <a href="kak-govorit-po-turetski.html" class="card">
+      <span class="card-badge">Для новичков</span>
+      <div class="card-body">
+        <div class="card-emoji">🗣️</div>
+        <div class="card-title">Как научиться говорить по-турецки с нуля</div>
+        <div class="card-desc">5 шагов от нуля до первого разговора. Что работает, что не работает, реальные сроки.</div>
+        <div class="card-meta"><span class="time">⏱ 6 мин</span><span>17 апреля 2026</span></div>
+      </div>
+    </a>
+    <a href="slozhno-li-uchit-turetskiy.html" class="card">
+      <span class="card-badge">Мотивация</span>
+      <div class="card-body">
+        <div class="card-emoji">🤔</div>
+        <div class="card-title">Сложно ли учить турецкий русскому — честный ответ</div>
+        <div class="card-desc">Что реально легко, что трудно, таблица сравнения с другими языками и реальные сроки.</div>
+        <div class="card-meta"><span class="time">⏱ 6 мин</span><span>17 апреля 2026</span></div>
+      </div>
+    </a>
+    <a href="turetskaya-grammatika.html" class="card">
+      <span class="card-badge">Грамматика</span>
+      <div class="card-body">
+        <div class="card-emoji">📐</div>
+        <div class="card-title">Турецкая грамматика для начинающих — только самое важное</div>
+        <div class="card-desc">Суффиксы, падежи, гармония гласных, времена глаголов — с таблицами и реальными примерами.</div>
+        <div class="card-meta"><span class="time">⏱ 8 мин</span><span>17 апреля 2026</span></div>
+      </div>
+    </a>
+    <a href="turetskiy-frazy-dlya-turtsii.html" class="card">
+      <span class="card-badge">Разговорник</span>
+      <div class="card-body">
+        <div class="card-emoji">💬</div>
+        <div class="card-title">50 фраз для жизни в Турции — базовый разговорник</div>
+        <div class="card-desc">Рынок, транспорт, врач, аренда, ВНЖ, банк — 50 фраз, которые нужны прямо сейчас.</div>
+        <div class="card-meta"><span class="time">⏱ 7 мин</span><span>17 апреля 2026</span></div>
+      </div>
+    </a>
+  </div>
+
+</div>
+
+<div class="cta-banner">
+  <h2>Учите турецкий по сценариям из жизни</h2>
+  <p>IziTurkish — приложение для русскоязычных в Турции. Базар, ВНЖ, аренда, врач, банк — реальные фразы с первого дня.</p>
+  <a href="https://cabinet.iziturkish.com" class="cta-btn">Попробовать бесплатно →</a>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">IziTurkish 🇹🇷</div>
+      <p style="font-size:0.85rem;">Турецкий для русских в Турции</p>
+    </div>
+    <div class="footer-col">
+      <h4>Приложение</h4>
+      <a href="https://cabinet.iziturkish.com">Войти</a>
+      <a href="https://iziturkish.com/#pricing">Тарифы</a>
+      <a href="https://iziturkish.com/blog/">Блог</a>
+    </div>
+    <div class="footer-col">
+      <h4>Семья Izi</h4>
+      <a href="https://izigreek.com">IziGreek 🇬🇷 — Греческий</a>
+      <a href="https://iziserb.com">IziSerb 🇷🇸 — Сербский</a>
+    </div>
+    <div class="footer-col">
+      <h4>Компания</h4>
+      <a href="https://iziturkish.com/privacy.html">Конфиденциальность</a>
+      <a href="https://iziturkish.com/terms.html">Условия</a>
+      <a href="https://iziturkish.com/refund.html">Возврат</a>
+    </div>
+  </div>
+  <div class="footer-copy">© 2026 IziTurkish. Все права защищены.</div>
+</footer>
+
+</body>
+</html>
